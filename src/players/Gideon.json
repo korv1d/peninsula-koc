@@ -1,0 +1,8 @@
+{
+    "name": "Gideon",
+    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Xenos - T'au Empire\n+ DETACHMENT: Farsight Enclaves\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Commander Farsight\n+ ENHANCEMENT: Talisman of Arthas Moloch (on Char1: Commander Farsight)\n+ NUMBER OF UNITS: 4\n+ SECONDARY: - Engage on All Fronts: 3 Units\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Commander Farsight (120 pts): Warlord, Plasma Rifle, Power Sword\nEnhancement: Talisman of Arthas Moloch (+20 pts)\n\n10x Fire Warriors (100 pts)\n• 1x Shas'ui: Pulse Rifle\n• 9x Fire Warriors: Pulse Rifles\n5x Crisis Battlesuits (180 pts)\n• 1x Shas'vre: Fusion Blaster\n• 4x Crisis Suits: Missile Pods\n3x Stealth Suits (100 pts): Burst Cannons\n",
+    "winrate": 0.45,
+    "mostEnemiesKilled": 80,
+    "greatestPointsDifference": 65,
+    "highestScore": 160
+}

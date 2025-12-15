@@ -1,0 +1,70 @@
+body,
+html,
+#root,
+.main-bg {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-bg {
+    background: linear-gradient(120deg, #23243a 0%, #181a24 100%);
+    background-image: url('../assets/fog.png'), linear-gradient(120deg, #23243a 0%, #181a24 100%);
+    background-size: cover, 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 4.5rem;
+    min-height: 90vh;
+}
+
+.marine-img {
+    width: 180px;
+    height: auto;
+    opacity: 0.85;
+    margin: 0 2vw;
+}
+
+.marine-img.left {
+    align-self: flex-start;
+}
+
+.marine-img.right {
+    align-self: flex-end;
+}
+
+/* Shared bracket-container for all pages, now fills width for lists */
+.bracket-container {
+    width: 100%;
+    background: rgba(30, 32, 44, 0.92);
+    border-radius: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 4vw 2rem 4vw;
+    box-shadow: 0 4px 32px #000a;
+    min-width: 350px;
+    max-width: 1800px;
+    min-height: 500px;
+    color: #e0e0e0;
+    position: relative;
+}
+
+#tournament-bracket-placeholder {
+    color: #7ecfff;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
