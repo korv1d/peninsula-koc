@@ -43,15 +43,16 @@ html,
     align-self: flex-end;
 }
 
+/* Shared bracket-container for all pages, now fills width for lists */
 .bracket-container {
-    flex: 1 1 600px;
+    width: 100%;
     background: rgba(30, 32, 44, 0.92);
     border-radius: 18px;
-    margin: 0 2vw;
-    padding: 2rem 2rem 2rem 2rem;
+    margin: 0 auto;
+    padding: 2rem 3vw 2rem 3vw;
     box-shadow: 0 4px 32px #000a;
     min-width: 350px;
-    max-width: 700px;
+    max-width: 1800px;
     min-height: 500px;
     color: #e0e0e0;
     position: relative;
