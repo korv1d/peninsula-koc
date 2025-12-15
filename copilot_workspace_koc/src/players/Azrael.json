@@ -1,8 +1,0 @@
-{
-    "name": "Azrael",
-    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Dark Angels\n+ DETACHMENT: Wrath of the Rock\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Judiciar\n+ ENHANCEMENT: Ancient Weapons (on Char1: Judiciar)\n+ NUMBER OF UNITS: 5\n+ SECONDARY: - Assassination: 1 Characters\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Judiciar (95 pts): Warlord, Absolver Bolt Pistol, Executioner Relic Blade\nEnhancement: Ancient Weapons (+25 pts)\n\n5x Assault Intercessor Squad (75 pts)\n• 1x Assault Intercessor Sergeant: Plasma Pistol, Power Fist\n• 4x Assault Intercessors: 4 with Astartes Chainsword, Heavy Bolt Pistol\n3x Inceptor Squad (120 pts)\n• 2x Inceptor: 2 with Close combat weapon, Plasma Exterminators\n• 1x Inceptor Sergeant: Close combat weapon, Plasma Exterminators\n3x Inceptor Squad (120 pts)\n• 2x Inceptor: 2 with Close combat weapon, Plasma Exterminators\n• 1x Inceptor Sergeant: Close combat weapon, Plasma Exterminators\n3x Inner Circle Companions (90 pts): 3 with Calibanite Greatsword, Heavy Bolt Pistol\n",
-    "winrate": 0.75,
-    "mostEnemiesKilled": 120,
-    "greatestPointsDifference": 95,
-    "highestScore": 200
-}

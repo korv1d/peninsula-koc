@@ -1,8 +1,0 @@
-{
-    "name": "Balthasar",
-    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Chaos - Heretic Astartes - Black Legion\n+ DETACHMENT: Spear of the Gods\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Chaos Lord\n+ ENHANCEMENT: Relic Armor (on Char1: Chaos Lord)\n+ NUMBER OF UNITS: 4\n+ SECONDARY: - Domination: 2 Objectives\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Chaos Lord (100 pts): Warlord, Power Sword, Plasma Pistol\nEnhancement: Relic Armor (+20 pts)\n\n10x Chaos Space Marines (180 pts)\n• 1x Aspiring Champion: Power Fist, Bolt Pistol\n• 9x Chaos Space Marines: Bolters\n5x Havocs (100 pts)\n• 1x Aspiring Champion: Boltgun, Power Axe\n• 4x Havocs: Heavy Bolters\n3x Obliterators (100 pts): Fleshmetal Guns\n",
-    "winrate": 0.6,
-    "mostEnemiesKilled": 110,
-    "greatestPointsDifference": 80,
-    "highestScore": 180
-}
