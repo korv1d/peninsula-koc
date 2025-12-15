@@ -69,3 +69,18 @@
     background: #000;
     z-index: 0;
 }
+
+/* Glow-on-hover for bracket nodes */
+.tournament-bracket .match-node {
+    transition: border 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+    /* initial border */
+}
+
+.tournament-bracket .match-node:hover {
+    border-color: #7ecfff;
+    /* same light blue as navbar hover */
+    box-shadow: 0 0 8px #7ecfff99;
+    /* subtle glow effect */
+    cursor: pointer;
+}
