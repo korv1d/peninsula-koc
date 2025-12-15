@@ -1,5 +1,6 @@
 import React from 'react';
 import tournamentData from '../tournament/tournament.json';
+import { players } from '../players';
 import './TournamentBracket.css';
 
 interface MatchNode {
@@ -12,9 +13,9 @@ interface MatchProps {
     node: MatchNode;
 }
 
-// Recursive Match component
 const Match: React.FC<MatchProps> = ({ node }) => {
     const hasChildren = node.children && node.children.length > 0;
+    const player = node.name ? players[node.name] : null;
 
     return (
         <div className="match-container">
@@ -29,7 +30,9 @@ const Match: React.FC<MatchProps> = ({ node }) => {
                     <div className="horizontal-line" />
                 </div>
             )}
-            <div className="match-node">{node.winner || node.name || '?'}</div>
+            <div className="match-node" title={player?.list || undefined}>
+                {node.winner || node.name || '?'}
+            </div>
         </div>
     );
 };
