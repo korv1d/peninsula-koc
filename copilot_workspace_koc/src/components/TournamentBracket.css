@@ -28,6 +28,50 @@
     font-weight: 500;
 }
 
+/* Glow-on-hover effect */
+.tournament-bracket .match-node {
+    transition: border 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+}
+
+.tournament-bracket .match-node:hover {
+    border-color: #7ecfff;
+    box-shadow: 0 0 8px #7ecfff99;
+    cursor: pointer;
+}
+
+/* Hover container for tooltip */
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hover card / tooltip */
+.hover-card {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 110%;
+    /* appears to the right */
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    /* adjust font size here */
+    max-width: 500px;
+    max-height: 600px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/* Show tooltip on hover of node or container */
+.hover-container:hover .hover-card {
+    display: block;
+}
+
 /* Container for child nodes and connecting lines */
 .match-children {
     display: flex;
@@ -38,7 +82,7 @@
     /* space from children to parent */
     position: relative;
     min-height: 100px;
-    /* ensures some spacing even with 1 child */
+    /* ensures spacing even with 1 child */
 }
 
 /* Horizontal line connecting parent to children */
@@ -68,19 +112,4 @@
     height: 100%;
     background: #000;
     z-index: 0;
-}
-
-/* Glow-on-hover for bracket nodes */
-.tournament-bracket .match-node {
-    transition: border 0.2s, box-shadow 0.2s;
-    border: 2px solid transparent;
-    /* initial border */
-}
-
-.tournament-bracket .match-node:hover {
-    border-color: #7ecfff;
-    /* same light blue as navbar hover */
-    box-shadow: 0 0 8px #7ecfff99;
-    /* subtle glow effect */
-    cursor: pointer;
 }

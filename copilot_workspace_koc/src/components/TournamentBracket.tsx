@@ -30,8 +30,16 @@ const Match: React.FC<MatchProps> = ({ node }) => {
                     <div className="horizontal-line" />
                 </div>
             )}
-            <div className="match-node" title={player?.list || undefined}>
-                {node.winner || node.name || '?'}
+
+            <div className="hover-container">
+                <div className="match-node">
+                    {node.winner || node.name || '?'}
+                </div>
+                {player && (
+                    <div className="hover-card">
+                        <pre>{player.list}</pre>
+                    </div>
+                )}
             </div>
         </div>
     );
