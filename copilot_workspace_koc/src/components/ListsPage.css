@@ -1,13 +1,17 @@
 /* Responsive grid fills the screen, tiles are much wider */
+/* Responsive grid fills the screen, tiles are much wider, and tiles are separated visually */
+/* Responsive grid fills the screen, tiles are spaced and never overlap */
 .lists-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(340px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 2.5rem;
   margin-top: 2rem;
   width: 100%;
   max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 .list-tile {
   background: rgba(40, 50, 70, 0.96);
@@ -20,8 +24,8 @@
   flex-direction: column;
   align-items: stretch;
   overflow: hidden;
-  width: 100%;
   min-width: 0;
+  margin: 0;
 }
 .list-tile-header {
   font-size: 1.3rem;
@@ -46,7 +50,7 @@
 }
 @media (max-width: 1400px) {
   .lists-grid {
-    grid-template-columns: repeat(2, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   }
 }
 @media (max-width: 900px) {

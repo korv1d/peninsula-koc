@@ -48,8 +48,11 @@ html,
     width: 100%;
     background: rgba(30, 32, 44, 0.92);
     border-radius: 18px;
-    margin: 0 auto;
-    padding: 2rem 3vw 2rem 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 4vw 2rem 4vw;
     box-shadow: 0 4px 32px #000a;
     min-width: 350px;
     max-width: 1800px;
