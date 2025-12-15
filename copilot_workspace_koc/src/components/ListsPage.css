@@ -10,7 +10,10 @@
     /* Between 1.45rem and 1.74rem */
     max-width: 100vw;
     overflow-x: auto;
+    width: auto;
+    max-width: none;
 }
+
 
 .leaderboard-entry {
     color: #e0e0e0;
@@ -19,84 +22,85 @@
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0.01em;
-.leaderboard-entry {
-    white-space: nowrap;
 
-.leaderboard-entry .player-name {
-    font-weight: bold;
-    /* Changed from 700 to bold for clarity */
-    color: #7ecfff;
-}
+    .leaderboard-entry {
+        white-space: nowrap;
 
-/* Responsive grid fills the screen, tiles are much wider */
-/* Responsive grid fills the screen, tiles are much wider, and tiles are separated visually */
-/* Responsive grid fills the screen, tiles are spaced and never overlap */
-/* Force 3 tiles per row on desktop, responsive on smaller screens */
-.lists-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    box-sizing: border-box;
-}
+        .leaderboard-entry .player-name {
+            font-weight: bold;
+            /* Changed from 700 to bold for clarity */
+            color: #7ecfff;
+        }
 
-.list-tile {
-    background: rgba(40, 50, 70, 0.96);
-    border-radius: 14px;
-    box-shadow: 0 2px 16px #000a;
-    padding: 1.2rem 2.2rem 1rem 2.2rem;
-    min-height: 340px;
-    max-height: 520px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    overflow: hidden;
-    min-width: 0;
-    margin: 0;
-}
+        /* Responsive grid fills the screen, tiles are much wider */
+        /* Responsive grid fills the screen, tiles are much wider, and tiles are separated visually */
+        /* Responsive grid fills the screen, tiles are spaced and never overlap */
+        /* Force 3 tiles per row on desktop, responsive on smaller screens */
+        .lists-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2.5rem;
+            margin-top: 2rem;
+            width: 100%;
+            max-width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.list-tile-header {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #7ecfff;
-    margin-bottom: 0.7rem;
-    text-align: center;
-}
+        .list-tile {
+            background: rgba(40, 50, 70, 0.96);
+            border-radius: 14px;
+            box-shadow: 0 2px 16px #000a;
+            padding: 1.2rem 2.2rem 1rem 2.2rem;
+            min-height: 340px;
+            max-height: 520px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            overflow: hidden;
+            min-width: 0;
+            margin: 0;
+        }
 
-.list-tile-scroll {
-    flex: 1 1 auto;
-    overflow-y: auto;
-    background: rgba(30, 32, 44, 0.98);
-    border-radius: 8px;
-    padding: 0.5rem 0.7rem;
-    color: #e0e0e0;
-}
+        .list-tile-header {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ecfff;
+            margin-bottom: 0.7rem;
+            text-align: center;
+        }
 
-.list-tile-scroll pre {
-    margin: 0;
-    font-family: 'Fira Mono', 'Consolas', monospace;
-    font-size: 0.97rem;
-    white-space: pre-wrap;
-}
+        .list-tile-scroll {
+            flex: 1 1 auto;
+            overflow-y: auto;
+            background: rgba(30, 32, 44, 0.98);
+            border-radius: 8px;
+            padding: 0.5rem 0.7rem;
+            color: #e0e0e0;
+        }
 
-@media (max-width: 1400px) {
-    .lists-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+        .list-tile-scroll pre {
+            margin: 0;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 0.97rem;
+            white-space: pre-wrap;
+        }
 
-@media (max-width: 900px) {
-    .lists-grid {
-        grid-template-columns: 1fr;
-    }
+        @media (max-width: 1400px) {
+            .lists-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-    .list-tile {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
+        @media (max-width: 900px) {
+            .lists-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .list-tile {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
