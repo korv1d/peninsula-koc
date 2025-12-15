@@ -12,14 +12,21 @@ interface MatchProps {
     node: MatchNode;
 }
 
+// Recursive Match component
 const Match: React.FC<MatchProps> = ({ node }) => {
+    const hasChildren = node.children && node.children.length > 0;
+
     return (
         <div className="match-container">
-            {node.children && (
+            {hasChildren && (
                 <div className="match-children">
-                    {node.children.map((child, idx) => (
-                        <Match key={idx} node={child} />
+                    {node.children!.map((child, idx) => (
+                        <div key={idx} className="match-child-wrapper">
+                            <div className="vertical-line" />
+                            <Match node={child} />
+                        </div>
                     ))}
+                    <div className="horizontal-line" />
                 </div>
             )}
             <div className="match-node">{node.winner || node.name || '?'}</div>

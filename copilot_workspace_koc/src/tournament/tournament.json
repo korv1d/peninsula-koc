@@ -7,12 +7,32 @@
             "winner": "",
             "children": [
                 {
-                    "name": "Azrael",
-                    "winner": ""
+                    "name": "",
+                    "winner": "",
+                    "children": [
+                        {
+                            "name": "Azrael",
+                            "winner": ""
+                        },
+                        {
+                            "name": "Balthasar",
+                            "winner": ""
+                        }
+                    ]
                 },
                 {
-                    "name": "Balthasar",
-                    "winner": ""
+                    "name": "",
+                    "winner": "",
+                    "children": [
+                        {
+                            "name": "Cypher",
+                            "winner": ""
+                        },
+                        {
+                            "name": "Dante",
+                            "winner": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -21,12 +41,32 @@
             "winner": "",
             "children": [
                 {
-                    "name": "Cypher",
-                    "winner": ""
+                    "name": "",
+                    "winner": "",
+                    "children": [
+                        {
+                            "name": "Ezekiel",
+                            "winner": ""
+                        },
+                        {
+                            "name": "Fenris",
+                            "winner": ""
+                        }
+                    ]
                 },
                 {
-                    "name": "Dante",
-                    "winner": ""
+                    "name": "",
+                    "winner": "",
+                    "children": [
+                        {
+                            "name": "Gideon",
+                            "winner": ""
+                        },
+                        {
+                            "name": "Horus",
+                            "winner": ""
+                        }
+                    ]
                 }
             ]
         }

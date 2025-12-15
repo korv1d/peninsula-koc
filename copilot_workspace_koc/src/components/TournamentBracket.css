@@ -8,37 +8,64 @@
 .match-container {
     display: flex;
     flex-direction: row;
-    /* Left-to-right */
+    /* left-to-right */
     align-items: center;
-    margin: 0 10px;
     position: relative;
 }
 
 .match-node {
-    background: #222;
+    background: #555;
+    /* lighter gray */
     color: #fff;
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 6px;
     text-align: center;
     min-width: 80px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* subtle shadow */
+    font-weight: 500;
 }
 
+/* Container for child nodes and connecting lines */
 .match-children {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-right: 20px;
-    /* Children are on the left of parent */
+    justify-content: space-around;
+    /* spreads children evenly */
+    margin-right: 40px;
+    /* space from children to parent */
     position: relative;
+    min-height: 100px;
+    /* ensures some spacing even with 1 child */
 }
 
-/* Optional horizontal line connecting parent to children */
-.match-children::after {
-    content: '';
+/* Horizontal line connecting parent to children */
+.horizontal-line {
     position: absolute;
-    right: -20px;
     top: 50%;
-    width: 20px;
+    right: -40px;
+    width: 40px;
     height: 2px;
     background: #000;
+    z-index: 0;
+}
+
+/* Wrap each child to add vertical line */
+.match-child-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Vertical line from parent to each child */
+.vertical-line {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #000;
+    z-index: 0;
 }
