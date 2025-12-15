@@ -1,0 +1,60 @@
+/* Responsive grid fills the screen, tiles are much wider */
+.lists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(340px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-tile {
+  background: rgba(40, 50, 70, 0.96);
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #000a;
+  padding: 1.2rem 2.2rem 1rem 2.2rem;
+  min-height: 340px;
+  max-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+}
+.list-tile-header {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #7ecfff;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+.list-tile-scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  background: rgba(30, 32, 44, 0.98);
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  color: #e0e0e0;
+}
+.list-tile-scroll pre {
+  margin: 0;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 0.97rem;
+  white-space: pre-wrap;
+}
+@media (max-width: 1400px) {
+  .lists-grid {
+    grid-template-columns: repeat(2, minmax(340px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .lists-grid {
+    grid-template-columns: 1fr;
+  }
+  .list-tile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

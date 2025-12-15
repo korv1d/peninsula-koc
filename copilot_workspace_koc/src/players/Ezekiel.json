@@ -1,8 +1,8 @@
 {
-  "name": "Ezekiel",
-  "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Dark Angels\n+ DETACHMENT: Deathwing\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Deathwing Terminator Captain\n+ ENHANCEMENT: The Mace of Redemption (on Char1: Deathwing Terminator Captain)\n+ NUMBER OF UNITS: 3\n+ SECONDARY: - Attrition: 2 Units\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Deathwing Terminator Captain (130 pts): Warlord, Storm Bolter, Power Fist\nEnhancement: The Mace of Redemption (+25 pts)\n\n5x Deathwing Terminators (200 pts)\n• 1x Sergeant: Thunder Hammer\n• 4x Terminators: Power Fists\n3x Ravenwing Black Knights (120 pts): Plasma Talons\n",
-  "winrate": 0.65,
-  "mostEnemiesKilled": 105,
-  "greatestPointsDifference": 90,
-  "highestScore": 185
+    "name": "Ezekiel",
+    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Dark Angels\n+ DETACHMENT: Deathwing\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Deathwing Terminator Captain\n+ ENHANCEMENT: The Mace of Redemption (on Char1: Deathwing Terminator Captain)\n+ NUMBER OF UNITS: 3\n+ SECONDARY: - Attrition: 2 Units\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Deathwing Terminator Captain (130 pts): Warlord, Storm Bolter, Power Fist\nEnhancement: The Mace of Redemption (+25 pts)\n\n5x Deathwing Terminators (200 pts)\n• 1x Sergeant: Thunder Hammer\n• 4x Terminators: Power Fists\n3x Ravenwing Black Knights (120 pts): Plasma Talons\n",
+    "winrate": 0.65,
+    "mostEnemiesKilled": 105,
+    "greatestPointsDifference": 90,
+    "highestScore": 185
 }
