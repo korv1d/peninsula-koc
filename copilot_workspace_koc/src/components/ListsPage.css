@@ -1,9 +1,10 @@
 /* Responsive grid fills the screen, tiles are much wider */
 /* Responsive grid fills the screen, tiles are much wider, and tiles are separated visually */
 /* Responsive grid fills the screen, tiles are spaced and never overlap */
+/* Force 3 tiles per row on desktop, responsive on smaller screens */
 .lists-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2.5rem;
   margin-top: 2rem;
   width: 100%;
@@ -50,7 +51,7 @@
 }
 @media (max-width: 1400px) {
   .lists-grid {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 900px) {
