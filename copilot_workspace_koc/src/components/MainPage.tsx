@@ -99,20 +99,20 @@ const MainPage: React.FC = () => {
                 <img src={leftMarine} alt="Space Marine Left" className="marine-img left" />
                 <div className="bracket-container">
                     <h1>Tournament Bracket</h1>
-                                {/* Example Single Elimination Bracket */}
-                                            <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 800 }}>
-                                                <SingleEliminationBracket
-                                                    matches={exampleMatches}
-                                                    matchComponent={Match}
-                                                    svgWrapper={({ children, ...props }) => (
-                                                        <SVGViewer width={1200} height={700} {...props}>
-                                                            {children}
-                                                        </SVGViewer>
-                                                    )}
-                                                />
-                                            </div>
-                                {/* Example Double Elimination Bracket (optional, can remove if not needed) */}
-                                {/*
+                    {/* Example Single Elimination Bracket */}
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 800 }}>
+                        <SingleEliminationBracket
+                            matches={exampleMatches}
+                            matchComponent={Match}
+                            svgWrapper={({ children, ...props }) => (
+                                <SVGViewer width={1200} height={700} background="rgba(35,36,58,1)" {...props}>
+                                    {children}
+                                </SVGViewer>
+                            )}
+                        />
+                    </div>
+                    {/* Example Double Elimination Bracket (optional, can remove if not needed) */}
+                    {/*
                                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 600 }}>
                                     <DoubleEliminationBracket
                                         matches={exampleMatches}
