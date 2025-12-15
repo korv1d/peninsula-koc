@@ -1,0 +1,8 @@
+{
+  "name": "Dante",
+  "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Blood Angels\n+ DETACHMENT: Sons of Sanguinius\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Captain\n+ ENHANCEMENT: Angel's Wings (on Char1: Captain)\n+ NUMBER OF UNITS: 4\n+ SECONDARY: - Slay the Warlord: 1 Characters\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Captain (110 pts): Warlord, Bolt Pistol, Power Sword\nEnhancement: Angel's Wings (+20 pts)\n\n5x Assault Squad (90 pts)\n• 1x Sergeant: Power Fist\n• 4x Assault Marines: Chainswords\n10x Tactical Squad (150 pts)\n• 1x Sergeant: Plasma Pistol\n• 9x Tactical Marines: Bolters\n3x Sanguinary Guard (130 pts): Encarmine Swords\n",
+  "winrate": 0.7,
+  "mostEnemiesKilled": 100,
+  "greatestPointsDifference": 85,
+  "highestScore": 190
+}
