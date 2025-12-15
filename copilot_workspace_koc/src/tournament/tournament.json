@@ -1,39 +1,33 @@
 {
-    "rounds": [
+    "name": "Champion",
+    "winner": "",
+    "children": [
         {
-            "matches": [
+            "name": "",
+            "winner": "",
+            "children": [
                 {
-                    "player1": "Azrael",
-                    "player2": "Balthasar",
-                    "winner": null
+                    "name": "Azrael",
+                    "winner": ""
                 },
                 {
-                    "player1": "Cypher",
-                    "player2": "Dante",
-                    "winner": null
-                },
-                {
-                    "player1": "Ezekiel",
-                    "player2": "Fenris",
-                    "winner": null
-                },
-                {
-                    "player1": "Gideon",
-                    "player2": "Horus",
-                    "winner": null
+                    "name": "Balthasar",
+                    "winner": ""
                 }
             ]
         },
         {
-            "matches": [
-                {},
-                {},
-                {}
-            ]
-        },
-        {
-            "matches": [
-                {}
+            "name": "",
+            "winner": "",
+            "children": [
+                {
+                    "name": "Cypher",
+                    "winner": ""
+                },
+                {
+                    "name": "Dante",
+                    "winner": ""
+                }
             ]
         }
     ]

@@ -1,202 +1,44 @@
-/* Classic forking bracket layout */
-.tournament-bracket-classic {
+.tournament-bracket {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.match-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* Left-to-right */
     align-items: center;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
-}
-
-.bracket-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 180px;
-    gap: 2.5rem;
-}
-
-.round-label {
-    color: #7ecfff;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.bracket-cell {
-    background: rgba(40, 50, 70, 0.92);
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-    padding: 1rem 0.5rem;
-    min-width: 160px;
-    min-height: 70px;
-    box-shadow: 0 2px 12px #0006;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 10px;
     position: relative;
 }
 
-.bracket-player {
-    margin: 0.2rem 0;
-    position: relative;
-    min-height: 1.5rem;
+.match-node {
+    background: #222;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 80px;
 }
 
-.bracket-connector-col {
+.match-children {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-width: 40px;
-    gap: 4.5rem;
-}
-
-.bracket-connector-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
-    justify-content: center;
-}
-
-/* Custom bracket layout for BracketGLoot.tsx */
-.custom-bracket-container {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    min-height: 500px;
-    margin: 40px 0;
-}
-
-.bracket-side {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 25%;
-    align-items: flex-end;
-}
-
-.bracket-right {
-    align-items: flex-start;
-}
-
-.bracket-player-tile {
-    background: rgba(30, 34, 40, 0.85);
-    color: #e0e6ef;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    padding: 18px 24px;
-    min-width: 180px;
-    max-width: 260px;
+    margin-right: 20px;
+    /* Children are on the left of parent */
     position: relative;
-    margin-bottom: 8px;
-    font-size: 1.1rem;
-    transition: box-shadow 0.2s;
 }
 
-.bracket-player-tile:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
-}
-
-.bracket-player-name {
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.bracket-round-label {
-    font-size: 0.95rem;
-    color: #a0b0c0;
-    margin-top: 6px;
-    font-style: italic;
-}
-
-.bracket-menu-center {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 400px;
-}
-
-.bracket-menu-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #e0e6ef;
-    margin-bottom: 32px;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 8px #000a;
-}
-
-.bracket-connector {
-    width: 40px;
-    height: 60px;
-    border-left: 3px solid #7ecfff;
-    border-bottom: 3px solid #7ecfff;
-    border-radius: 0 0 0 24px;
-    margin-bottom: 1.5rem;
-}
-
-.player-name {
-    color: #e0e0e0;
-    cursor: pointer;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.player-name:hover {
-    color: #7ecfff;
-    text-shadow: 0 0 8px #7ecfff99;
-}
-
-.empty-slot {
-    color: #888;
-    font-style: italic;
-}
-
-.vs {
-    color: #aaa;
-    font-size: 0.95rem;
-    margin: 0.2rem 0 0.2rem 0;
-}
-
-.winner-label {
-    color: #ffe066;
-    font-size: 0.95rem;
-    margin-top: 0.5rem;
-    font-weight: 600;
-}
-
-.player-tile {
+/* Optional horizontal line connecting parent to children */
+.match-children::after {
+    content: '';
     position: absolute;
-    left: 110%;
-    top: 0;
-    z-index: 10;
-    background: rgba(30, 32, 44, 0.98);
-    border-radius: 10px;
-    box-shadow: 0 2px 16px #000a;
-    min-width: 320px;
-    max-width: 420px;
-    max-height: 320px;
-    overflow: hidden;
-    padding: 0.5rem 1rem;
-    color: #e0e0e0;
-    font-size: 0.95rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.player-list-scroll {
-    overflow-y: auto;
-    max-height: 260px;
-    padding-right: 0.5rem;
-}
-
-.player-tile pre {
-    margin: 0;
-    font-family: 'Fira Mono', 'Consolas', monospace;
-    font-size: 0.92rem;
-    white-space: pre-wrap;
+    right: -20px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: #000;
 }
