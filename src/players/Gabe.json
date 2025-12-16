@@ -1,8 +1,11 @@
 {
     "name": "Gabe",
     "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Custodes\n+ DETACHMENT: Shield Host\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Shield Captain\n+ ENHANCEMENT: Auric Aquilas (on Char1: Shield Captain)\n+ NUMBER OF UNITS: 3\n+ SECONDARY: - Linebreaker: 1 Units\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Shield Captain (120 pts): Warlord, Guardian Spear\nEnhancement: Auric Aquilas (+30 pts)\n\n5x Custodian Guard (200 pts)\n• 1x Shield Sergeant: Sentinel Blade\n• 4x Custodian Guard: Guardian Spears\n3x Vertus Praetors (150 pts): Hurricane Bolters\n",
-    "winrate": 0.5,
-    "mostEnemiesKilled": 90,
-    "greatestPointsDifference": 60,
-    "highestScore": 170
+    "winrate": 50,
+    "mostEnemiesKilled": 0,
+    "greatestPointsDifference": 0,
+    "highestScore": 0,
+    "mostPointsInRound": 0,
+    "shortestGame": 0,
+    "shortestTurn": 0
 }
