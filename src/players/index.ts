@@ -1,12 +1,12 @@
 // src/players/index.ts
-import Azrael from './Azrael.json';
-import Balthasar from './Balthasar.json';
-import Cypher from './Cypher.json';
-import Dante from './Dante.json';
-import Ezekiel from './Ezekiel.json';
-import Fenris from './Fenris.json';
-import Gideon from './Gideon.json';
-import Horus from './Horus.json';
+import Anthony from './Anthony.json';
+import Ayden from './Ayden.json';
+import Belisarius from './Belisarius.json';
+import Ben from './Ben.json';
+import Gabe from './Gabe.json';
+import Ian from './Ian.json';
+import Nate from './Nate.json';
+import Roman from './Roman.json';
 
 export interface Player {
     name: string;
@@ -18,12 +18,12 @@ export interface Player {
 }
 
 export const players: Record<string, Player> = {
-    Azrael,
-    Balthasar,
-    Cypher,
-    Dante,
-    Ezekiel,
-    Fenris,
-    Gideon,
-    Horus,
+    Anthony,
+    Ayden,
+    Belisarius,
+    Ben,
+    Gabe,
+    Ian,
+    Nate,
+    Roman,
 };

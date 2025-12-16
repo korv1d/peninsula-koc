@@ -5,7 +5,7 @@ import type { Player } from '../types';
 import './ListsPage.css';
 
 const playerNames = [
-    'Azrael', 'Balthasar', 'Cypher', 'Dante', 'Ezekiel', 'Fenris', 'Gideon', 'Horus'
+    'Anthony', 'Ayden', 'Belisarius', 'Ben', 'Gabe', 'Ian', 'Nate', 'Roman'
 ];
 
 type Metric = {
