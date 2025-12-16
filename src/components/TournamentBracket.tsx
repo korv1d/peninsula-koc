@@ -53,4 +53,16 @@ const TournamentBracket: React.FC = () => {
     );
 };
 
+// const TournamentBracket: React.FC = () => {
+//     return (
+//         <div className="tournament-bracket-wrapper">
+//             <h1 className="page-title">Peninsula KoC Tournament Bracket</h1>
+
+//             <div className="tournament-bracket">
+//                 <Match node={tournamentData} />
+//             </div>
+//         </div>
+//     );
+// };
+
 export default TournamentBracket;

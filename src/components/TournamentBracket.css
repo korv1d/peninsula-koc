@@ -123,3 +123,11 @@
     background: #000;
     z-index: 0;
 }
+
+.page-title {
+    font-size: 1.2rem;
+    /* ⬅ main control */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
