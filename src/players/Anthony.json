@@ -1,7 +1,6 @@
 {
     "name": "Anthony",
-    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Space Wolves\n+ DETACHMENT: Champions of Fenris\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Wolf Lord\n+ ENHANCEMENT: Wolf Tail Talisman (on Char1: Wolf Lord)\n+ NUMBER OF UNITS: 4\n+ SECONDARY: - First Strike: 1 Units\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Wolf Lord (115 pts): Warlord, Frost Axe, Storm Shield\nEnhancement: Wolf Tail Talisman (+15 pts)\n\n5x Grey Hunters (90 pts)\n• 1x Pack Leader: Power Sword\n• 4x Grey Hunters: Bolters\n10x Blood Claws (150 pts)\n• 1x Pack Leader: Power Fist\n• 9x Blood Claws: Chainswords\n3x Thunderwolf Cavalry (130 pts): Thunder Hammers\n",
-    "winrate": 0.5,
+    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Xenos - Aeldari\n+ DETACHMENT: Warhost (Martial Grace)\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Spiritseer\n+ ENHANCEMENT: Phoenix Gem (on Char1: Spiritseer)\n+ NUMBER OF UNITS: 4\n+ SECONDARY: - Assassination: 1 Characters\n+++++++++++++++++++++++++++++++++++++++++++++++\nChar1: 1x Spiritseer (100 pts): Warlord, Shuriken Pistol, Witch Staff\nEnhancement: Phoenix Gem (+35 pts)\n5x Fire Dragons (120 pts)\n• 1x Fire Dragon Exarch: Close combat weapon, Exarch's Dragon Fusion Gun\n• 4x Fire Dragon: 4 with Close combat weapon, Dragon Fusion Gun\n5x Wraithguard (170 pts): 5 with Close Combat Weapon, D-Scythe\n3x Shining Spears (110 pts)\n• 1x Shining Spear Exarch: Twin Shuriken Catapult, Laser Lance\n• 2x Shining Spear: 2 with Laser Lance, Twin Shuriken Catapult",
     "mostEnemiesKilled": 23,
     "greatestPointsDifference": 0,
     "highestScore": 0,
