@@ -1,7 +1,7 @@
 {
     "name": "Belisarius",
     "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Chaos - Sons of Horus\n+ DETACHMENT: The Warmaster's Host\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Horus\n+ ENHANCEMENT: The Talon of Horus (on Char1: Horus)\n+ NUMBER OF UNITS: 2\n+ SECONDARY: - Decapitation: 1 Characters\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Horus (200 pts): Warlord, The Talon of Horus, Power Maul\nEnhancement: The Talon of Horus (+50 pts)\n\n10x Justaerin Terminators (300 pts)\n• 1x Justaerin Sergeant: Power Sword\n• 9x Justaerin Terminators: Power Axes\n",
-    "winrate": 50,
+    "winrate": 0.5,
     "mostEnemiesKilled": 0,
     "greatestPointsDifference": 0,
     "highestScore": 0,
