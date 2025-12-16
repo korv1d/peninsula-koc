@@ -6,6 +6,6 @@
     "greatestPointsDifference": 0,
     "highestScore": 0,
     "mostPointsInRound": 0,
-    "shortestGame": 0,
-    "shortestTurn": 0
+    "shortestGame": "",
+    "shortestTurn": "00:01:43"
 }

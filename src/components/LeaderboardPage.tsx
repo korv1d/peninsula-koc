@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import type { Player } from '../types';
@@ -13,6 +12,7 @@ type Metric = {
     label: string;
     unit: string;
     isPercent?: boolean;
+    isTime?: boolean; // For HH:MM:SS metrics
 };
 
 const metrics: Metric[] = [
@@ -21,9 +21,18 @@ const metrics: Metric[] = [
     { key: 'greatestPointsDifference', label: 'Greatest Points Difference', unit: 'points' },
     { key: 'highestScore', label: 'Highest Score', unit: 'points' },
     { key: 'mostPointsInRound', label: 'Most Points in a Round', unit: 'points' },
-    { key: 'shortestGame', label: 'Shortest Game', unit: 'turns' },
-    { key: 'shortestTurn', label: 'Shortest Turn', unit: 'seconds' }
+    { key: 'shortestGame', label: 'Shortest Game', unit: '', isTime: true },
+    { key: 'shortestTurn', label: 'Shortest Turn', unit: '', isTime: true }
 ];
+
+// Helper to convert "HH:MM:SS" or "MM:SS" → seconds
+const timeStringToSeconds = (time: string | number): number => {
+    if (!time || time === 0) return Infinity; // treat 0 or empty string as unclaimed
+    const parts = (time as string).split(':').map(Number);
+    if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+    if (parts.length === 2) return parts[0] * 60 + parts[1];
+    return 0;
+};
 
 const LeaderboardPage: React.FC = () => {
     const [players, setPlayers] = useState<Player[]>([]);
@@ -39,13 +48,47 @@ const LeaderboardPage: React.FC = () => {
     const getLeaderboardEntry = (metric: Metric) => {
         if (players.length === 0) return null;
 
-        // Get the maximum value for this metric
+        console.log(metric.key, players.map(p => p[metric.key]));
+
+        // Handle shortestGame / shortestTurn separately
+        if (metric.key === 'shortestGame' || metric.key === 'shortestTurn') {
+            const timeStringToSeconds = (time: string | number): number => {
+                if (!time || time === 0) return Infinity; // treat 0 or empty as unclaimed
+                const parts = (time as string).split(':').map(Number);
+                if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+                if (parts.length === 2) return parts[0] * 60 + parts[1];
+                return 0;
+            };
+
+            const minValue = Math.min(
+                ...players.map(p => timeStringToSeconds(p[metric.key]))
+            );
+
+            if (minValue === Infinity) {
+                return (
+                    <div className="leaderboard-entry" key={metric.key}>
+                        {metric.label}: <span className="player-name">Unclaimed</span>
+                    </div>
+                );
+            }
+
+            const topPlayers = players.filter(
+                p => timeStringToSeconds(p[metric.key]) === minValue
+            );
+            const displayValue = topPlayers[0][metric.key];
+
+            return (
+                <div className="leaderboard-entry" key={metric.key}>
+                    {metric.label}: <span className="player-name">
+                        {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
+                    </span> ({displayValue})
+                </div>
+            );
+        }
+
+        // Handle numeric metrics
         let maxValue = Math.max(...players.map(p => p[metric.key] as number));
 
-        // Convert to percentage if needed
-        if (metric.isPercent) maxValue = Math.round(maxValue * 1000) / 10; // e.g. 0.75 -> 75.0
-
-        // Handle the case where no player has a value > 0
         if (maxValue === 0) {
             return (
                 <div className="leaderboard-entry" key={metric.key}>
@@ -54,23 +97,21 @@ const LeaderboardPage: React.FC = () => {
             );
         }
 
-        // Find players with the top value
-        const topPlayers = players.filter(p => p[metric.key] === (metric.isPercent ? maxValue / 100 : maxValue));
+        const topPlayers = players.filter(p => p[metric.key] === maxValue);
 
-        if (topPlayers.length === 1) {
-            return (
-                <div className="leaderboard-entry" key={metric.key}>
-                    {metric.label}: <span className="player-name">{topPlayers[0].name}</span> ({maxValue} {metric.unit})
-                </div>
-            );
-        } else {
-            return (
-                <div className="leaderboard-entry" key={metric.key}>
-                    {metric.label}: <span className="player-name">Contested</span> ({maxValue} {metric.unit})
-                </div>
-            );
+        if (metric.isPercent) {
+            maxValue = Math.round(maxValue * 1000) / 10; // e.g. 0.75 -> 75.0
         }
+
+        return (
+            <div className="leaderboard-entry" key={metric.key}>
+                {metric.label}: <span className="player-name">
+                    {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
+                </span> ({maxValue} {metric.unit})
+            </div>
+        );
     };
+
 
     return (
         <div className="main-bg">
