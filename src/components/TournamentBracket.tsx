@@ -21,13 +21,15 @@ const Match: React.FC<MatchProps> = ({ node }) => {
         <div className="match-container">
             {hasChildren && (
                 <div className="match-children">
+                    {/* horizontal line connecting to all children */}
+                    <div className="horizontal-line" />
                     {node.children!.map((child, idx) => (
                         <div key={idx} className="match-child-wrapper">
+                            {/* vertical line from horizontal line down to child */}
                             <div className="vertical-line" />
                             <Match node={child} />
                         </div>
                     ))}
-                    <div className="horizontal-line" />
                 </div>
             )}
 

@@ -1,3 +1,4 @@
+/* Container for the entire bracket */
 .tournament-bracket {
     display: flex;
     justify-content: center;
@@ -5,17 +6,66 @@
     padding: 20px;
 }
 
+/* Each match container */
 .match-container {
     display: flex;
     flex-direction: row;
-    /* left-to-right */
     align-items: center;
     position: relative;
 }
 
+/* Container for child nodes and connecting lines */
+.match-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* evenly space children vertically */
+    margin-right: 40px;
+    /* space from parent to children */
+    position: relative;
+    /* for vertical lines positioning */
+    min-height: 100px;
+    /* ensures spacing even with 1 child */
+}
+
+/* Wrap each child to position vertical line */
+.match-child-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* allows vertical line to stretch properly */
+}
+
+/* Vertical line connecting parent to child */
+.vertical-line {
+    position: absolute;
+    left: -40px;
+    /* aligns to the start of horizontal line */
+    top: 0;
+    width: 2px;
+    height: 100%;
+    /* stretches from parent down to child */
+    background: #000;
+    z-index: 0;
+}
+
+/* Horizontal line connecting parent to children */
+.horizontal-line {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    /* length of horizontal connector */
+    width: 40px;
+    height: 2px;
+    background: #000;
+    z-index: 0;
+}
+
+/* Match node styling (the box with player name or winner) */
 .match-node {
     background: #555;
-    /* lighter gray */
+    /* box background */
     color: #fff;
     padding: 8px 12px;
     border-radius: 6px;
@@ -24,23 +74,18 @@
     z-index: 1;
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    /* subtle shadow */
     font-weight: 500;
-}
-
-/* Glow-on-hover effect */
-.tournament-bracket .match-node {
     transition: border 0.2s, box-shadow 0.2s;
     border: 2px solid transparent;
 }
 
-.tournament-bracket .match-node:hover {
+.match-node:hover {
     border-color: #7ecfff;
     box-shadow: 0 0 8px #7ecfff99;
     cursor: pointer;
 }
 
-/* Hover container for tooltip */
+/* Hover container for tip card */
 .hover-container {
     position: relative;
     display: inline-block;
@@ -52,82 +97,21 @@
     position: absolute;
     top: 0;
     left: 110%;
-    /* appears to the right */
+    /* appears to the right of the node */
     background: rgba(0, 0, 0, 0.85);
     color: #fff;
     padding: 10px;
     border-radius: 6px;
     font-size: 0.75rem;
-    /* adjust font size here */
-    max-width: 400px;
-    max-height: 500px;
+    max-width: 500px;
+    max-height: 600px;
     overflow-y: auto;
     white-space: pre-wrap;
-
-    /* add a rim / border */
-    /* border: 2px solid transparent;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    transition: border 0.2s, box-shadow 0.2s; */
-
     z-index: 10;
 }
 
-/* When hovering over the node, highlight the hover card rim */
+/* Show hover card */
 .hover-container:hover .hover-card {
     display: block;
-    /* show the card */
-    /* border-color: #7e84ff; */
-    /* light blue rim */
-    /* box-shadow: 0 0 10px #7ecfff99; */
-    /* glow effect */
-}
-
-/* Container for child nodes and connecting lines */
-.match-children {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* spreads children evenly */
-    margin-right: 40px;
-    /* space from children to parent */
-    position: relative;
-    min-height: 100px;
-    /* ensures spacing even with 1 child */
-}
-
-/* Horizontal line connecting parent to children */
-.horizontal-line {
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    width: 40px;
-    height: 2px;
-    background: #000;
-    z-index: 0;
-}
-
-/* Wrap each child to add vertical line */
-.match-child-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-/* Vertical line from parent to each child */
-.vertical-line {
-    position: absolute;
-    left: -40px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: #000;
-    z-index: 0;
-}
-
-.page-title {
-    font-size: 1.2rem;
-    /* ⬅ main control */
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-align: center;
 }
