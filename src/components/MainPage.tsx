@@ -10,6 +10,7 @@ const MainPage: React.FC = () => {
     return (
         <div className="main-bg">
             <NavBar />
+
             <div className="main-content">
                 <img
                     src={bannerLeft}
@@ -17,7 +18,10 @@ const MainPage: React.FC = () => {
                     className="marine-img left"
                 />
 
-                <TournamentBracket />
+                {/* ✅ MAIN-ONLY wrapper */}
+                <div className="main-bracket-container">
+                    <TournamentBracket />
+                </div>
 
                 <img
                     src={bannerRight}
