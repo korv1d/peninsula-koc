@@ -14,7 +14,7 @@
 }
 
 .match-node {
-    background: #555;
+    background: rgba(85, 85, 85, 0.9);
     /* lighter gray */
     color: #fff;
     padding: 8px 12px;
