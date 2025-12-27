@@ -5,29 +5,6 @@
     padding: 20px;
 }
 
-.match-container {
-    display: flex;
-    flex-direction: row;
-    /* left-to-right */
-    align-items: center;
-    position: relative;
-}
-
-.match-node {
-    background: rgba(85, 85, 85, 0.9);
-    /* lighter gray */
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 6px;
-    text-align: center;
-    min-width: 80px;
-    z-index: 1;
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    /* subtle shadow */
-    font-weight: 500;
-}
-
 /* Glow-on-hover effect */
 .tournament-bracket .match-node {
     transition: border 0.2s, box-shadow 0.2s;
@@ -38,6 +15,30 @@
     border-color: #7ecfff;
     box-shadow: 0 0 8px #7ecfff99;
     cursor: pointer;
+}
+
+.match-container {
+    display: flex;
+    flex-direction: row;
+    /* left-to-right */
+    align-items: center;
+    position: relative;
+}
+
+.match-node {
+    /* Johanna 1 (Node Background Color) */
+    background: rgba(35, 58, 41, 0.9);
+    /* Johanna 2 (Text Color) */
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 80px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* subtle shadow */
+    font-weight: 500;
 }
 
 /* Hover container for tooltip */

@@ -80,6 +80,7 @@ html,
 }
 
 .main-bracket-container {
+    position: relative; /* REQUIRED for ::before */
     width: 100%;
     max-width: 1800px;
     min-width: 350px;
@@ -88,18 +89,34 @@ html,
     padding: 2.5rem 4vw;
     margin: 0 auto;
 
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #000a;
+    overflow: hidden;
+}
+
+.main-bracket-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
     background-image:
         url('../assets/background.jpg'),
-        linear-gradient(120deg,
+        linear-gradient(
+            120deg,
             rgba(35, 36, 58, 0.25),
-            rgba(24, 26, 36, 0.1));
+            rgba(24, 26, 36, 0.1)
+        );
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    border-radius: 18px;
-    box-shadow: 0 4px 32px #000a;
+    opacity: 0.5; /* 50% transparency */
 
-    overflow: hidden;
+    z-index: 0;
+}
+
+.main-bracket-container > * {
+    position: relative;
+    z-index: 1;
 }
