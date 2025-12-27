@@ -23,7 +23,7 @@ const Match: React.FC<MatchProps> = ({ node }) => {
                 <div className="match-children">
                     {node.children!.map((child, idx) => (
                         <div key={idx} className="match-child-wrapper">
-                            <div className="vertical-line" />
+                            {/* <div className="vertical-line" /> */}
                             <Match node={child} />
                         </div>
                     ))}
@@ -52,17 +52,5 @@ const TournamentBracket: React.FC = () => {
         </div>
     );
 };
-
-// const TournamentBracket: React.FC = () => {
-//     return (
-//         <div className="tournament-bracket-wrapper">
-//             <h1 className="page-title">Peninsula KoC Tournament Bracket</h1>
-
-//             <div className="tournament-bracket">
-//                 <Match node={tournamentData} />
-//             </div>
-//         </div>
-//     );
-// };
 
 export default TournamentBracket;
