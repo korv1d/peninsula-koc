@@ -112,11 +112,11 @@ html,
     background-repeat: no-repeat;
 
     /* Johanna 3 (Background transparency) */
-    opacity: .7; /* 50% transparency */
+    opacity: .9; /* 50% transparency */
 
     /* 50% saturation and contrast */
     /* Johanna 4 (Saturation and Contrast) */
-    filter: saturate(1.3s) contrast(.9);
+    filter: saturate(1s) contrast(1);
 
     z-index: 0;
 }
