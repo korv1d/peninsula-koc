@@ -27,18 +27,22 @@
 
 .match-node {
     /* Johanna 1 (Node Background Color) */
-    background: rgba(35, 58, 41, 0.9);
+    background: rgb(36, 56, 113);
     /* Johanna 2 (Text Color) */
-    color: #ffffff;
+    color: #f9f6ed;
     padding: 8px 12px;
     border-radius: 6px;
     text-align: center;
     min-width: 80px;
+    max-width: 110px;
+    min-height: 24px;
+    max-height: 24px;
     z-index: 1;
     position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     /* subtle shadow */
     font-weight: 500;
+    font-size:125%;
 }
 
 /* Hover container for tooltip */
@@ -58,10 +62,12 @@
     color: #fff;
     padding: 10px;
     border-radius: 6px;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     /* adjust font size here */
     max-width: 400px;
     max-height: 500px;
+    text-wrap: balance;
+    /* text-wrap-mode: wrap; */
     overflow-y: auto;
     white-space: pre-wrap;
 
@@ -102,8 +108,8 @@
     top: 50%;
     right: -40px;
     width: 40px;
-    height: 2px;
-    background: #000;
+    height: 2.5px;
+    background: #aab8d5;
     z-index: 0;
 }
 
