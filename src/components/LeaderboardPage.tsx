@@ -7,12 +7,19 @@ const playerNames = [
     'Anthony', 'Ayden', 'Belisarius', 'Ben', 'Gabe', 'Ian', 'Nate', 'Roman'
 ];
 
+type DerivedMetricKey =
+    | 'mostPointsInRound'
+    | 'shortestGame'
+    | 'shortestTurn';
+
+type MetricKey = keyof Player | DerivedMetricKey;
+
 type Metric = {
-    key: keyof Player;
+    key: MetricKey;
     label: string;
     unit: string;
     isPercent?: boolean;
-    isTime?: boolean; // For HH:MM:SS metrics
+    isTime?: boolean;
 };
 
 const metrics: Metric[] = [
@@ -48,20 +55,10 @@ const LeaderboardPage: React.FC = () => {
     const getLeaderboardEntry = (metric: Metric) => {
         if (players.length === 0) return null;
 
-        console.log(metric.key, players.map(p => p[metric.key]));
-
-        // Handle shortestGame / shortestTurn separately
+        // Time-based derived metrics
         if (metric.key === 'shortestGame' || metric.key === 'shortestTurn') {
-            const timeStringToSeconds = (time: string | number): number => {
-                if (!time || time === 0) return Infinity; // treat 0 or empty as unclaimed
-                const parts = (time as string).split(':').map(Number);
-                if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
-                if (parts.length === 2) return parts[0] * 60 + parts[1];
-                return 0;
-            };
-
             const minValue = Math.min(
-                ...players.map(p => timeStringToSeconds(p[metric.key]))
+                ...players.map(p => timeStringToSeconds((p as any)[metric.key]))
             );
 
             if (minValue === Infinity) {
@@ -73,21 +70,23 @@ const LeaderboardPage: React.FC = () => {
             }
 
             const topPlayers = players.filter(
-                p => timeStringToSeconds(p[metric.key]) === minValue
+                p => timeStringToSeconds((p as any)[metric.key]) === minValue
             );
-            const displayValue = topPlayers[0][metric.key];
 
             return (
                 <div className="leaderboard-entry" key={metric.key}>
-                    {metric.label}: <span className="player-name">
+                    {metric.label}:{' '}
+                    <span className="player-name">
                         {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
-                    </span> ({displayValue})
+                    </span>
                 </div>
             );
         }
 
-        // Handle numeric metrics
-        let maxValue = Math.max(...players.map(p => p[metric.key] as number));
+        // Numeric Player-backed metrics
+        const key = metric.key as keyof Player;
+
+        let maxValue = Math.max(...players.map(p => p[key]));
 
         if (maxValue === 0) {
             return (
@@ -97,20 +96,23 @@ const LeaderboardPage: React.FC = () => {
             );
         }
 
-        const topPlayers = players.filter(p => p[metric.key] === maxValue);
+        const topPlayers = players.filter(p => p[key] === maxValue);
 
         if (metric.isPercent) {
-            maxValue = Math.round(maxValue * 1000) / 10; // e.g. 0.75 -> 75.0
+            maxValue = Math.round(maxValue * 1000) / 10;
         }
 
         return (
             <div className="leaderboard-entry" key={metric.key}>
-                {metric.label}: <span className="player-name">
+                {metric.label}:{' '}
+                <span className="player-name">
                     {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
-                </span> ({maxValue} {metric.unit})
+                </span>{' '}
+                ({maxValue} {metric.unit})
             </div>
         );
     };
+
 
 
     return (
