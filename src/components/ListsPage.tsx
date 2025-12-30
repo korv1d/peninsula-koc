@@ -25,7 +25,7 @@ const ListsPage: React.FC = () => {
             <div className="bracket-container">
                 <h1>Player Lists</h1>
                 <div className="lists-grid">
-                    {players.map((player, idx) => (
+                    {players.map((player) => (
                         <div className="list-tile" key={player.name}>
                             <div className="list-tile-header">{player.name}</div>
                             <div className="list-tile-scroll">
