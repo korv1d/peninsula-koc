@@ -14,6 +14,11 @@ type DerivedMetricKey =
 
 type MetricKey = keyof Player | DerivedMetricKey;
 
+type NumericPlayerKey = {
+    [K in keyof Player]: Player[K] extends number ? K : never
+}[keyof Player];
+
+
 type Metric = {
     key: MetricKey;
     label: string;
@@ -84,7 +89,7 @@ const LeaderboardPage: React.FC = () => {
         }
 
         // Numeric Player-backed metrics
-        const key = metric.key as keyof Player;
+        const key = metric.key as NumericPlayerKey;
 
         let maxValue = Math.max(...players.map(p => p[key]));
 
