@@ -27,7 +27,7 @@
 
 .match-node {
     /* Johanna 1 (Node Background Color) */
-    background: rgb(114, 33, 130);
+    background: rgba(108, 31, 124, 0.9);
     /* Johanna 2 (Text Color) */
     color: #f9f6ed;
     padding: 8px 12px;
