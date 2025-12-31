@@ -1,11 +1,17 @@
-
 import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import type { Player } from '../types';
 import './ListsPage.css';
 
 const playerNames = [
-    'Anthony', 'Ayden', 'Belisarius', 'Ben', 'Gabe', 'Ian', 'Nate', 'Roman'
+    'Anthony',
+    'Ayden',
+    'Belisarius',
+    'Ben',
+    'Gabe',
+    'Ian',
+    'Nate',
+    'Roman'
 ];
 
 const ListsPage: React.FC = () => {
@@ -14,9 +20,19 @@ const ListsPage: React.FC = () => {
     useEffect(() => {
         Promise.all(
             playerNames.map(name =>
-                fetch(`/src/players/${name}.json`).then(res => res.json())
+                fetch(`/players/${name}.json`)
+                    .then(res => {
+                        if (!res.ok) {
+                            throw new Error(`Failed to load ${name}.json (HTTP ${res.status})`);
+                        }
+                        return res.json();
+                    })
             )
-        ).then(setPlayers);
+        )
+            .then(setPlayers)
+            .catch(err => {
+                console.error('ListsPage load failed:', err);
+            });
     }, []);
 
     return (
@@ -25,7 +41,7 @@ const ListsPage: React.FC = () => {
             <div className="bracket-container">
                 <h1>Player Lists</h1>
                 <div className="lists-grid">
-                    {players.map((player) => (
+                    {players.map(player => (
                         <div className="list-tile" key={player.name}>
                             <div className="list-tile-header">{player.name}</div>
                             <div className="list-tile-scroll">
