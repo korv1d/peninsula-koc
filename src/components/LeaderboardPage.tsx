@@ -52,12 +52,14 @@ const timeStringToSeconds = (time: string | number): number => {
     return 0;
 };
 
+import { PLAYER_NAMES } from '../constants/players';
+
 const LeaderboardPage: React.FC = () => {
     const [players, setPlayers] = useState<Player[]>([]);
 
     useEffect(() => {
         Promise.all(
-            playerNames.map(name =>
+            PLAYER_NAMES.map(name =>
                 fetch(`/players/${name}.json`)
                     .then(res => {
                         if (!res.ok) {

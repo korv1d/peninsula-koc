@@ -3,23 +3,14 @@ import NavBar from './NavBar';
 import type { Player } from '../types';
 import './ListsPage.css';
 
-const playerNames = [
-    'Anthony',
-    'Ayden',
-    'Belisarius',
-    'Ben',
-    'Gabe',
-    'Ian',
-    'Nate',
-    'Roman'
-];
+import { PLAYER_NAMES } from '../constants/players';
 
 const ListsPage: React.FC = () => {
     const [players, setPlayers] = useState<Player[]>([]);
 
     useEffect(() => {
         Promise.all(
-            playerNames.map(name =>
+            PLAYER_NAMES.map(name =>
                 fetch(`/players/${name}.json`)
                     .then(res => {
                         if (!res.ok) {
