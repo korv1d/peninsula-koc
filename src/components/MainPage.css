@@ -29,19 +29,41 @@ html,
 }
 
 .marine-img {
-    width: 180px;
-    height: auto;
+    /* Height scales with viewport */
+    height: calc(100vh - 64px); /* subtract navbar height */
+    max-height: 900px;
+    min-height: 520px;
+
+    /* Width scales but is bounded */
+    width: clamp(220px, 18vw, 380px);
+
+    /* Cropping behavior */
+    object-fit: cover;
+    object-position: center;
+
     opacity: 0.85;
-    margin: 0 2vw;
+
+    /* Prevent flexbox from shrinking them */
+    flex-shrink: 0;
+
+    /* Soft fade into background */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
 }
 
 .marine-img.left {
-    align-self: flex-start;
+    object-position: right center; /* crop inward */
 }
 
 .marine-img.right {
-    align-self: flex-end;
+    object-position: left center; /* crop inward */
 }
+
 
 /* Shared bracket-container for all pages, now fills width for lists */
 .bracket-container {
@@ -69,15 +91,6 @@ html,
     opacity: 0.7;
 }
 
-.marine-img.left {
-    height: 720px;
-    width: 308px;
-}
-
-.marine-img.right {
-    height: 720px;
-    width: 308px;
-}
 
 .main-bracket-container {
     position: relative; /* REQUIRED for ::before */
