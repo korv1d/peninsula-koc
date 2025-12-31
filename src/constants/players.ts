@@ -3,7 +3,6 @@ export const PLAYER_NAMES = [
     'Ayden',
     'Noah',
     'Ben',
-    'Gabe',
     'Ian',
     'Logan',
     'Legend',
