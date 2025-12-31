@@ -123,11 +123,11 @@
                             "winner": "",
                             "children": [
                                 {
-                                    "name": "Roman",
+                                    "name": "Gabe",
                                     "winner": ""
                                 },
                                 {
-                                    "name": "Bye",
+                                    "name": "Logan",
                                     "winner": ""
                                 }
                             ]
@@ -137,11 +137,11 @@
                             "winner": "",
                             "children": [
                                 {
-                                    "name": "Gabe",
+                                    "name": "Roman",
                                     "winner": ""
                                 },
                                 {
-                                    "name": "Logan",
+                                    "name": "Bye",
                                     "winner": ""
                                 }
                             ]
