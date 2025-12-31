@@ -35,7 +35,21 @@ Install:
 Lint:  
 `npx eslint "src/**/*.{ts,tsx,js,jsx}"`
 
+## Heinekenmarines
 
-https://dash.cloudflare.com/e4a8774bf9413fdc2e3ef2dea4da289f/workers-and-pages
+### Tactics
 
-text
+Battle Plan 1:  
+* All squads drop, leader with BGVs
+* Dynamic reactions based on ABC practice deployments
+  
+Battle Plan 2:  
+* Intercessors start in reserves, Rapid-Ingress onto enemy home Obj. 
+
+Battle Plan 3:
+* Double Inceptor deep strike
+
+Battle Plan 4:
+* Judiciar does NOT lead BGVs.
+* Get full deployment info before dropping inceptors.
+    * Maybe this is how I deal with Impulsors?

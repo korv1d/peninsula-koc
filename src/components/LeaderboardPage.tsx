@@ -4,7 +4,14 @@ import type { Player } from '../types';
 import './ListsPage.css';
 
 const playerNames = [
-    'Anthony', 'Ayden', 'Belisarius', 'Ben', 'Gabe', 'Ian', 'Nate', 'Roman'
+    'Anthony',
+    'Ayden',
+    'Belisarius',
+    'Ben',
+    'Gabe',
+    'Ian',
+    'Nate',
+    'Roman'
 ];
 
 type DerivedMetricKey =
@@ -17,7 +24,6 @@ type MetricKey = keyof Player | DerivedMetricKey;
 type NumericPlayerKey = {
     [K in keyof Player]: Player[K] extends number ? K : never
 }[keyof Player];
-
 
 type Metric = {
     key: MetricKey;
@@ -39,7 +45,7 @@ const metrics: Metric[] = [
 
 // Helper to convert "HH:MM:SS" or "MM:SS" → seconds
 const timeStringToSeconds = (time: string | number): number => {
-    if (!time || time === 0) return Infinity; // treat 0 or empty string as unclaimed
+    if (!time || time === 0) return Infinity;
     const parts = (time as string).split(':').map(Number);
     if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
     if (parts.length === 2) return parts[0] * 60 + parts[1];
@@ -52,9 +58,19 @@ const LeaderboardPage: React.FC = () => {
     useEffect(() => {
         Promise.all(
             playerNames.map(name =>
-                fetch(`/src/players/${name}.json`).then(res => res.json())
+                fetch(`/players/${name}.json`)
+                    .then(res => {
+                        if (!res.ok) {
+                            throw new Error(`Failed to load ${name}.json (HTTP ${res.status})`);
+                        }
+                        return res.json();
+                    })
             )
-        ).then(setPlayers);
+        )
+            .then(setPlayers)
+            .catch(err => {
+                console.error('Leaderboard load failed:', err);
+            });
     }, []);
 
     const getLeaderboardEntry = (metric: Metric) => {
@@ -117,8 +133,6 @@ const LeaderboardPage: React.FC = () => {
             </div>
         );
     };
-
-
 
     return (
         <div className="main-bg">
