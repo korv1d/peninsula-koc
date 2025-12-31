@@ -1,10 +1,18 @@
 export const PLAYER_NAMES = [
     'Anthony',
     'Ayden',
-    'Belisarius',
+    'Noah',
     'Ben',
     'Gabe',
     'Ian',
-    'Nate',
+    'Logan',
+    'Legend',
+    'Matt',
+    'Gabe',
+    'Rhys',
+    'Mitch',
+    'Keivan',
+    'Emerson',
+    'James',
     'Roman'
 ] as const;
