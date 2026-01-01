@@ -3,17 +3,6 @@ import NavBar from './NavBar';
 import type { Player } from '../types';
 import './ListsPage.css';
 
-const playerNames = [
-    'Anthony',
-    'Ayden',
-    'Belisarius',
-    'Ben',
-    'Gabe',
-    'Ian',
-    'Nate',
-    'Roman'
-];
-
 type DerivedMetricKey =
     | 'mostPointsInRound'
     | 'shortestGame'
