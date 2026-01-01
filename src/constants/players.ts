@@ -11,6 +11,7 @@ export const PLAYER_NAMES = [
     'Gabe',
     'Rhys',
     'Mitch',
+    'Nate',
     'Keivan',
     'Emerson',
     'James',

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import tournamentData from '../tournament/tournament.json';
-import { players } from '../players';
+import { PLAYER_NAMES } from '../constants/players';
+import type { Player } from '../types';
 import './TournamentBracket.css';
 
 interface MatchNode {
@@ -11,11 +12,12 @@ interface MatchNode {
 
 interface MatchProps {
     node: MatchNode;
+    playersByName: Record<string, Player>;
 }
 
-const Match: React.FC<MatchProps> = ({ node }) => {
+const Match: React.FC<MatchProps> = ({ node, playersByName }) => {
     const hasChildren = node.children && node.children.length > 0;
-    const player = node.name ? players[node.name] : null;
+    const player = node.name ? playersByName[node.name] : null;
 
     return (
         <div className="match-container">
@@ -23,8 +25,7 @@ const Match: React.FC<MatchProps> = ({ node }) => {
                 <div className="match-children">
                     {node.children!.map((child, idx) => (
                         <div key={idx} className="match-child-wrapper">
-                            {/* <div className="vertical-line" /> */}
-                            <Match node={child} />
+                            <Match node={child} playersByName={playersByName} />
                         </div>
                     ))}
                     <div className="horizontal-line" />
@@ -35,6 +36,7 @@ const Match: React.FC<MatchProps> = ({ node }) => {
                 <div className="match-node">
                     {node.winner || node.name || '?'}
                 </div>
+
                 {player && (
                     <div className="hover-card">
                         <pre>{player.list}</pre>
@@ -46,9 +48,32 @@ const Match: React.FC<MatchProps> = ({ node }) => {
 };
 
 const TournamentBracket: React.FC = () => {
+    const [playersByName, setPlayersByName] = useState<Record<string, Player>>(
+        {}
+    );
+
+    useEffect(() => {
+        Promise.all(
+            PLAYER_NAMES.map(name =>
+                fetch(`/players/${name}.json`)
+                    .then(res => (res.ok ? res.json() : null))
+                    .then(data => (data ? [name, data] as const : null))
+            )
+        ).then(results => {
+            const map: Record<string, Player> = {};
+            results.forEach(entry => {
+                if (entry) {
+                    const [name, player] = entry;
+                    map[name] = player;
+                }
+            });
+            setPlayersByName(map);
+        });
+    }, []);
+
     return (
         <div className="tournament-bracket">
-            <Match node={tournamentData} />
+            <Match node={tournamentData} playersByName={playersByName} />
         </div>
     );
 };
