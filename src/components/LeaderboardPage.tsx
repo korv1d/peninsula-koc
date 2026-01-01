@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import type { Player } from '../types';
+import { PLAYER_NAMES } from '../constants/players';
 import './ListsPage.css';
 
 type DerivedMetricKey =
@@ -32,16 +33,14 @@ const metrics: Metric[] = [
     { key: 'shortestTurn', label: 'Shortest Turn', unit: '', isTime: true }
 ];
 
-// Helper to convert "HH:MM:SS" or "MM:SS" → seconds
+// Converts "HH:MM:SS" or "MM:SS" → seconds
 const timeStringToSeconds = (time: string | number): number => {
     if (!time || time === 0) return Infinity;
     const parts = (time as string).split(':').map(Number);
     if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
     if (parts.length === 2) return parts[0] * 60 + parts[1];
-    return 0;
+    return Infinity;
 };
-
-import { PLAYER_NAMES } from '../constants/players';
 
 const LeaderboardPage: React.FC = () => {
     const [players, setPlayers] = useState<Player[]>([]);
@@ -67,13 +66,17 @@ const LeaderboardPage: React.FC = () => {
     const getLeaderboardEntry = (metric: Metric) => {
         if (players.length === 0) return null;
 
-        // Time-based derived metrics
-        if (metric.key === 'shortestGame' || metric.key === 'shortestTurn') {
-            const minValue = Math.min(
-                ...players.map(p => timeStringToSeconds((p as any)[metric.key]))
-            );
+        /* ---------- Time-based metrics ---------- */
+        if (metric.isTime) {
+            const times = players.map(p => ({
+                player: p,
+                seconds: timeStringToSeconds((p as any)[metric.key]),
+                display: (p as any)[metric.key] as string
+            }));
 
-            if (minValue === Infinity) {
+            const minSeconds = Math.min(...times.map(t => t.seconds));
+
+            if (minSeconds === Infinity) {
                 return (
                     <div className="leaderboard-entry" key={metric.key}>
                         {metric.label}: <span className="player-name">Unclaimed</span>
@@ -81,23 +84,21 @@ const LeaderboardPage: React.FC = () => {
                 );
             }
 
-            const topPlayers = players.filter(
-                p => timeStringToSeconds((p as any)[metric.key]) === minValue
-            );
+            const winners = times.filter(t => t.seconds === minSeconds);
 
             return (
                 <div className="leaderboard-entry" key={metric.key}>
                     {metric.label}:{' '}
                     <span className="player-name">
-                        {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
+                        {winners.length === 1 ? winners[0].player.name : 'Contested'}
                     </span>
+                    {winners.length === 1 && ` (${winners[0].display})`}
                 </div>
             );
         }
 
-        // Numeric Player-backed metrics
+        /* ---------- Numeric metrics ---------- */
         const key = metric.key as NumericPlayerKey;
-
         let maxValue = Math.max(...players.map(p => p[key]));
 
         if (maxValue === 0) {
