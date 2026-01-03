@@ -11,6 +11,8 @@ import James from './James.json';
 import Keivahn from './Keivahn.json';
 import Legend from './Legend.json';
 import Logan from './Logan.json';
+import Mitch from './Mitch.json';
+import Nate from './Nate.json';
 import Noah from './Noah.json';
 import Roman from './Roman.json';
 
