@@ -117,6 +117,16 @@ Necrons
 
 Necrons\nAnnihilation Legion\n\nCHARACTERS\n\nLokhust Lord (95 Points)\n • 1x Lord's blade\n 1x Resurrection Orb\n • Enhancement: Eldritch Nightmare\n\nOTHER DATASHEETS\n\nFlayed Ones (60 Points)\n • 5x Flayer claws\n\nLokhust Heavy Destroyers (165 Points)\n • 3x Close combat weapon\n 3x Enmitic exterminator\n\nSkorpekh Destroyers (90 Points)\n • 1x Plasmacyte\n 3x Skorpekh hyperphase weapons\n\nSkorpekh Destroyers (90 Points)\n • 1x Plasmacyte\n 3x Skorpekh hyperphase weapons
 
+# DadMatt
+
+Aeldari
+Warhost
+
+Death Jester
+Guardian Defenders w/ Bright Lance
+5 Striking Scopions w/ Scopion's Claw
+5 Warp Spiders w/ Spinneret & Weavers
+Wave Serpent w/ Shuriken Cannon & Bright Lance
 
 # Emerson
 
@@ -472,17 +482,6 @@ Chaos Terminator Squad (360 points)
       2x Paired accursed weapons
       5x Power fist
 
-
-# Matt
-
-Aeldari
-Warhost
-
-Death Jester
-Guardian Defenders w/ Bright Lance
-5 Striking Scopions w/ Scopion's Claw
-5 Warp Spiders w/ Spinneret & Weavers
-Wave Serpent w/ Shuriken Cannon & Bright Lance
 
 
 # Mitch
