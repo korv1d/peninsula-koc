@@ -1,11 +1,17 @@
 // src/players/index.ts
-import Anthony from './Anthony.json';
 import Ayden from './Ayden.json';
-import Belisarius from './Belisarius.json';
 import Ben from './Ben.json';
+import DadMatt from './DadMatt.json';
+import Emerson from './Emerson.json';
+import EvilMatt from './EvilMatt.json';
+import Francisco from './Francisco.json';
 import Gabe from './Gabe.json';
 import Ian from './Ian.json';
-import Nate from './Nate.json';
+import James from './James.json';
+import Keivahn from './Keivahn.json';
+import Legend from './Legend.json';
+import Logan from './Logan.json';
+import Noah from './Noah.json';
 import Roman from './Roman.json';
 
 export interface Player {
@@ -18,12 +24,20 @@ export interface Player {
 }
 
 export const players: Record<string, Player> = {
-    Anthony,
     Ayden,
-    Belisarius,
     Ben,
+    DadMatt,
+    Emerson,
+    EvilMatt,
+    Francisco,
     Gabe,
     Ian,
+    James,
+    Keivahn,
+    Legend,
+    Logan,
+    Mitch,
     Nate,
-    Roman,
+    Noah,
+    Roman
 };

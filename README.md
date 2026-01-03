@@ -53,3 +53,25 @@ Battle Plan 4:
 * Judiciar does NOT lead BGVs.
 * Get full deployment info before dropping inceptors.
     * Maybe this is how I deal with Impulsors?
+
+
+
+---
+A message from @Ayden
+
+@everyone
+
+Happy New Year all!
+
+I am stoked for this upcoming KoC tourny and have made a website to track lists, standings, and player metrics-
+
+You can visit https://peninsula-koc.com/ now.
+
+FEATURES:
+- A leaderboard with metrics I find interesting (most points in one turn, shortest game, etc) see sample screenshot below.
+- A live tournament bracket
+- Player lists published all in one place
+
+I think this is neat! I hope people find it useful and contribute their stats to top the leaderboard
+
+---
