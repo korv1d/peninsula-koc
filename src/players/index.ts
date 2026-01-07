@@ -3,7 +3,7 @@ import Ayden from './Ayden.json';
 import Ben from './Ben.json';
 import DadMatt from './DadMatt.json';
 import Emerson from './Emerson.json';
-import EvilMatt from './EvilMatt.json';
+import MattG from './MattG.json';
 import Francisco from './Francisco.json';
 import Gabe from './Gabe.json';
 import Ian from './Ian.json';
@@ -30,7 +30,6 @@ export const players: Record<string, Player> = {
     Ben,
     DadMatt,
     Emerson,
-    EvilMatt,
     Francisco,
     Gabe,
     Ian,
@@ -39,6 +38,7 @@ export const players: Record<string, Player> = {
     Legend,
     Logan,
     Mitch,
+    MattG,
     Nate,
     Noah,
     Roman

@@ -152,7 +152,7 @@ Warboss in Mega Armor
 3 Meganobz w/ Twin Killsaws
 Trukk w/ Wreckin Ball
 
-# EvilMatt
+# MattG
 
 Blood Angels
 Liberator Assault Grounp
