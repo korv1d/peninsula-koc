@@ -1,11 +1,11 @@
 {
     "name": "Ayden",
     "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Heinekenmarines\n+ DETACHMENT: Blade of Ultramar\n+ TOTAL ARMY POINTS: 485pts\n+\n+ WARLORD: Char1: Judiciar\n+ ENHANCEMENT: Oath of Macragge (on Char1: Judiciar)\n+ NUMBER OF UNITS: 5\n+++++++++++++++++++++++++++++++++++++++++++++++\nChar1: 1x Judiciar (85 pts): Warlord, Absolver Bolt Pistol, Executioner Relic Blade\nEnhancement: Oath of Macragge (+15 pts)\n5x Intercessor Squad (80 pts)\n• 4x Intercessor\n    3 with Bolt pistol, Bolt Rifle, Close combat weapon\n    1 with Astartes grenade launcher, Bolt pistol, Bolt Rifle, Close combat weapon\n• 1x Intercessor Sergeant: Bolt pistol, Bolt Rifle, Power Fist\n3x Bladeguard Veteran Squad (80 pts)\n• 1x Bladeguard Veteran Sergeant: Master-crafted Power Weapon, Plasma Pistol\n• 2x Bladeguard Veterans: 2 with Heavy Bolt Pistol, Master-crafted Power Weapon\n3x Inceptor Squad (120 pts)\n• 2x Inceptor: 2 with Close combat weapon, Plasma Exterminators\n• 1x Inceptor Sergeant: Close combat weapon, Plasma Exterminators\n3x Inceptor Squad (120 pts)\n• 2x Inceptor: 2 with Close combat weapon, Plasma Exterminators\n• 1x Inceptor Sergeant: Close combat weapon, Plasma Exterminators",
-    "winrate": 0.0,
-    "mostEnemiesKilled": 0,
-    "greatestPointsDifference": 0,
-    "highestScore": 0,
-    "mostPointsInRound": 0,
+    "winrate": 0.99,
+    "mostEnemiesKilled": 21,
+    "greatestPointsDifference": 8,
+    "highestScore": 46,
+    "mostPointsInRound": 24,
     "shortestGame": "",
     "shortestTurn": ""
 }
