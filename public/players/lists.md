@@ -563,6 +563,7 @@ Enhancement: Merciless Denunciation (+25 pts)
 4x Sword Brethren Squad (105 pts): 4 with Astartes Chainsword, Heavy Bolt Pistol
 1x Impulsor (85 pts): Orbital Comms Array, 2 Fragstorm Grenade Launchers, 2x Fragstorm grenade launcherArmoured Hull, Multi-melta
 
+# Rhys
 
 
 # Roman

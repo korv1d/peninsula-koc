@@ -10,10 +10,10 @@ export const PLAYER_NAMES = [
     'James',
     'Keivahn',
     'Legend',
-    'Logan',
     'MattG',
     'Mitch',
     'Nate',
     'Noah',
+    'Rhys',
     'Roman'
 ] as const;

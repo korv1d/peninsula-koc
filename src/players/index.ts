@@ -10,7 +10,7 @@ import Ian from './Ian.json';
 import James from './James.json';
 import Keivahn from './Keivahn.json';
 import Legend from './Legend.json';
-import Logan from './Logan.json';
+import Rhys from './Rhys.json';
 import Mitch from './Mitch.json';
 import Nate from './Nate.json';
 import Noah from './Noah.json';
@@ -36,10 +36,10 @@ export const players: Record<string, Player> = {
     James,
     Keivahn,
     Legend,
-    Logan,
     Mitch,
     MattG,
     Nate,
     Noah,
+    Rhys,
     Roman
 };
