@@ -41,9 +41,9 @@ ADEPT OR DIE
 
 ## Terrain Rules
 
-1. All L-shaped terrain pieces and all straight terrain pieces are ruins. These ruins footprint is defined by the physical space in which they are in contact with the ground. All Core Rules rules regarding ruins apply to this terrain, as does the Games Workshop rules commentary.
+1. All L-shaped terrain pieces and all straight terrain pieces are ruins. These ruins’ footprint is defined by the physical space in which they are in contact with the ground. All [Core Rules](https://wahapedia.ru/wh40k10ed/the-rules/core-rules/#Terrain-Features-1) regarding ruins apply to this terrain, as does the Games Workshop rules commentary.
 
-2. The Colosseum Walls are a special type of terrain. Models may claim cover from this terrain as if it were a ruin as defined in the Core Rules and associated rules commentary.
+2. The Colosseum Walls are a special type of terrain. Models may claim cover from this terrain as if it were a ruin as defined in the [Core Rules](https://wahapedia.ru/wh40k10ed/the-rules/core-rules/#Benefit-of-Cover) and associated rules commentary.
 
 3. Colosseum Walls are impassable except for INFANTRY, BEAST, and SWARM models. These models may pass through this terrain by first reducing their movement characteristic by 4" (2" if the model has the FLY keyword). To do so, the model must be in base-to-base contact with the Colosseum Wall, after paying the 4" (or 2" for FLY) tax, the model is then moved to the point on the opposite wall nearest its starting position while in base-to-base contact. A model which has used some distance in movement already during the phase in which it is moving such that it lacks the 4" (or 2" for FLY) remaining needed to pay the tranversal tax upon basing the Wall may not make such a move.
 
