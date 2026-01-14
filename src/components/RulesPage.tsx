@@ -10,10 +10,10 @@ const RulesPage: React.FC = () => {
     console.log('RulesPage loaded!');
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL}assets/rules.md`;
-        console.log('FETCHING MARKDOWN FROM:', url);
+        // const url = `${import.meta.env.BASE_URL}assets/rules.md`;
+        // console.log('FETCHING MARKDOWN FROM:', url);
 
-        fetch('/assets/rules.md')
+        fetch('/rules.md')
             .then(res => {
                 console.log('HTTP STATUS:', res.status);
                 return res.text();
