@@ -8,7 +8,7 @@ const RulesPage: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch('/src/assets/rules.md')
+        fetch('/public/assets/rules.md')
             .then((res) => {
                 if (!res.ok) {
                     throw new Error('Failed to load rules.md');
