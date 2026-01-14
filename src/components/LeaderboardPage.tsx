@@ -30,7 +30,9 @@ const metrics: Metric[] = [
     { key: 'highestScore', label: 'Highest Score', unit: 'points' },
     { key: 'mostPointsInRound', label: 'Most Points in a Round', unit: 'points' },
     { key: 'shortestGame', label: 'Shortest Game', unit: '', isTime: true },
-    { key: 'shortestTurn', label: 'Shortest Turn', unit: '', isTime: true }
+    { key: 'shortestTurn', label: 'Shortest Turn', unit: '', isTime: true },
+    { key: 'mostCpInOneBr', label: 'Most CP spent in 1 turn', unit: 'CP'},
+    { key: 'leastModelsLost', label: 'Least Models Lost', unit: 'models'},
 ];
 
 // Converts "HH:MM:SS" or "MM:SS" → seconds

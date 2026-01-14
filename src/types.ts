@@ -7,6 +7,8 @@ export interface Player {
     mostEnemiesKilled: number;
     greatestPointsDifference: number;
     highestScore: number;
+    mostCpInOneBr: number;
+    leastModelsLost: number;
 }
 
 export interface Match {

@@ -7,5 +7,7 @@
     "highestScore": 0,
     "mostPointsInRound": 0,
     "shortestGame": "",
-    "shortestTurn": ""
+    "shortestTurn": "",
+    "mostCpInOneBr": 0,
+    "leastModelsLost": -100
 }
