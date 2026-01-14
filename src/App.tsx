@@ -5,6 +5,7 @@ import MainPage from './components/MainPage';
 // import LeaderboardPage from './components/LeaderboardPage';
 // import ListsPage from './components/ListsPage';
 
+const RulesPage = React.lazy(() => import('./components/RulesPage'));
 const LeaderboardPage = React.lazy(() => import('./components/LeaderboardPage'));
 const ListsPage = React.lazy(() => import('./components/ListsPage'));
 
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <React.Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/rules" element={<RulesPage />} />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/lists" element={<ListsPage />} />
         </Routes>

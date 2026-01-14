@@ -1,0 +1,40 @@
+.rules-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+
+    background: rgba(30, 32, 44, 0.92);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #000a;
+
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.rules-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #7ecfff;
+}
+
+.rules-container h2 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #7ecfff;
+    font-size: 1.4rem;
+}
+
+.rules-container ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rules-container li {
+    margin-bottom: 0.5rem;
+}
+
+.rules-container p {
+    margin-bottom: 1rem;
+}
