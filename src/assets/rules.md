@@ -22,16 +22,16 @@ Deployment Zones extend 9 inches from a player's side of the field.
 
 Players determine Attacker and Defender prior to the Read Mission Objectives setup step. 
 
-The Attacker gets to choose the Primary Mission and selects from:
-TAKE AND HOLD
-LINCHPIN
-TERRAFORM
+The Attacker gets to choose the Primary Mission and selects from:  
+TAKE AND HOLD  
+LINCHPIN  
+TERRAFORM  
 
-The Defender gets to choose the Mission Twist and does so after the Attacker has chosen the Primary Mission. The Defender selects from:
-POINT BLANK
-RUINSCAPE
-LORDS OF WAR
-ADEPT OR DIE
+The Defender gets to choose the Mission Twist and does so after the Attacker has chosen the Primary Mission. The Defender selects from:  
+POINT BLANK  
+RUINSCAPE  
+LORDS OF WAR  
+ADEPT OR DIE  
 
 Challenger cards will be used in game.
 

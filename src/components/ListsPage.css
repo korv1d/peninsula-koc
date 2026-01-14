@@ -42,6 +42,8 @@
     margin-right: auto;
     padding: 0;
     box-sizing: border-box;
+    /* max-width: vw; */
+    /* ^ control % of lateral page filled ^ */
 }
 
 .list-tile {
