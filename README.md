@@ -54,6 +54,45 @@ Battle Plan 4:
 * Get full deployment info before dropping inceptors.
     * Maybe this is how I deal with Impulsors?
 
+# Rules
+
+Each match consists of a best of 3 series of games.
+
+## Army Composition
+
+Each player must compose a army list not exceeding 500 points, with one character specified as Warlord.
+
+No unit may contain a model with toughness 10 or higher.
+
+Each list must contain two units of non-character Infantry.
+
+No epic heroes.
+
+Battleline units may advance, shoot, and perform actions on the same turn
+
+## Logistics
+
+Players will play on the Play-on-Tabletop Colosseum board, depicted below.
+
+Deployment Zones extend 9 inches from a players side of the field.
+
+Players determine Attacker and Defender normally. 
+
+The Attacker gets to choose the Primary Mission and selects from:
+TAKE AND HOLD
+LINCHPIN
+TERRAFORM
+
+The Defender gets to choose the Mission Twist and does so after the Attacker has chosen the Primary Mission. The Defender selects from:
+POINT BLANK
+RUINSCAPE
+LORDS OF WAR
+ADEPT OR DIE
+
+Challenger cards will be used in game.
+
+Units that can infiltrate may not be deployed touching more than one No Mans Land objectives
+
 ## Terrain Rules
 
 All L-shaped terrain pieces and all straight terrain pieces are ruins. These ruins footprint is defined by the physical space in which they are in contact with the ground. All Core Rules rules regarding ruins apply to this terrain, as does the Games Workshop rules commentary.
