@@ -8,16 +8,20 @@ const RulesPage: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}assets/rules.md`)
+        const url = `${import.meta.env.BASE_URL}assets/rules.md`;
+        console.log('FETCHING MARKDOWN FROM:', url);
+
+        fetch(url)
             .then(res => {
-                if (!res.ok) {
-                    throw new Error(`Failed to fetch rules.md: ${res.status}`);
-                }
+                console.log('HTTP STATUS:', res.status);
                 return res.text();
             })
-            .then(setMarkdown)
+            .then(text => {
+                console.log('MARKDOWN RESPONSE (first 200 chars):', text.slice(0, 200));
+                setMarkdown(text);
+            })
             .catch(err => {
-                console.error(err);
+                console.error('MARKDOWN FETCH ERROR:', err);
                 setMarkdown('Failed to load rules.');
             });
     }, []);
