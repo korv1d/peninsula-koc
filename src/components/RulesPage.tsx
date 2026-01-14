@@ -8,15 +8,18 @@ const RulesPage: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch('/public/assets/rules.md')
-            .then((res) => {
+        fetch(`${import.meta.env.BASE_URL}assets/rules.md`)
+            .then(res => {
                 if (!res.ok) {
-                    throw new Error('Failed to load rules.md');
+                    throw new Error(`Failed to fetch rules.md: ${res.status}`);
                 }
                 return res.text();
             })
             .then(setMarkdown)
-            .catch((err) => setError(err.message));
+            .catch(err => {
+                console.error(err);
+                setMarkdown('Failed to load rules.');
+            });
     }, []);
 
     return (
