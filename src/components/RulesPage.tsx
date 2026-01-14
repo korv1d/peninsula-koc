@@ -7,11 +7,13 @@ const RulesPage: React.FC = () => {
     const [markdown, setMarkdown] = useState('');
     const [error, setError] = useState<string | null>(null);
 
+    console.log('RulesPage loaded!');
+
     useEffect(() => {
         const url = `${import.meta.env.BASE_URL}assets/rules.md`;
         console.log('FETCHING MARKDOWN FROM:', url);
 
-        fetch(url)
+        fetch('/assets/rules.md')
             .then(res => {
                 console.log('HTTP STATUS:', res.status);
                 return res.text();
