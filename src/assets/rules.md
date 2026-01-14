@@ -4,15 +4,15 @@ Each match consists of a best of 3 series of games.
 
 ## Army Composition
 
-Each player must compose a army list not exceeding 500 points, with one character specified as Warlord.
+1. Each player must compose a army list not exceeding 500 points, with one character specified as Warlord.
 
-No unit may contain a model with toughness 10 or higher.
+2. No unit may contain a model with toughness 10 or higher at the time of Declare Battle Formations.
 
-Each list must contain two units of non-character Infantry.
+3. Each list must contain two units of non-character Infantry.
 
-No epic heroes.
+4. No epic heroes.
 
-Battleline units may advance, shoot, and perform actions on the same turn.
+5. Battleline units may advance, shoot, and perform actions on the same turn.
 
 ## Logistics
 
