@@ -13,7 +13,7 @@ const RulesPage: React.FC = () => {
         // const url = `${import.meta.env.BASE_URL}assets/rules.md`;
         // console.log('FETCHING MARKDOWN FROM:', url);
 
-        fetch('/rules.md')
+        fetch('/players/rules.md')
             .then(res => {
                 console.log('HTTP STATUS:', res.status);
                 return res.text();
