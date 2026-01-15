@@ -54,3 +54,17 @@ Battle Plan 4:
 * Get full deployment info before dropping inceptors.
     * Maybe this is how I deal with Impulsors?
 
+### vs Matt
+
+* choose Attacker
+* if Attacker, choose lynchpin
+* if defender, choose Lords of War
+
+* Drop Intercessors on right side of home obj
+
+- If Impulsor dropped first
+
+- If Sterngard dropped first
+    - If Sterngard dropped right
+
+    - If Sterngard dropped left
