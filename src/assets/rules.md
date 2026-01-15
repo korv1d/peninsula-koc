@@ -45,13 +45,13 @@ ADEPT OR DIE
 
 2. The Colosseum Walls are a special type of terrain. Models may claim cover from this terrain as if it were a ruin as defined in the [Core Rules](https://wahapedia.ru/wh40k10ed/the-rules/core-rules/#Benefit-of-Cover) and associated rules commentary.
 
-3. Colosseum Walls are impassable except for INFANTRY, BEAST, and SWARM models. These models may pass through this terrain by first reducing their movement characteristic by 4" (2" if the model has the FLY keyword). To do so, the model must be in base-to-base contact with the Colosseum Wall, after paying the 4" (or 2" for FLY) tax, the model is then moved to the point on the opposite wall nearest its starting position while in base-to-base contact. A model which has used some distance in movement already during the phase in which it is moving such that it lacks the 4" (or 2" for FLY) remaining needed to pay the tranversal tax upon basing the Wall may not make such a move.
+3. Colosseum Walls are impassable except for INFANTRY, BEAST, and SWARM models. These models may pass through this terrain by first paying a 4" tax to their movement (2" if the model has the FLY keyword). To do so, the model must be in base-to-base contact with the Colosseum Wall, after paying this tax, the model is then moved to the point on the opposite side of the wall nearest its current position (the model ends the move in base-to-base contact). This traversal is simply a movement penalty and does not constitute its own type of move. If a model does not have enough movement remaining to perform this tranversal by paying the tax it may not traverse. Models must pay this movement tax each time they traverse the Colosseum Wall, even if they do so multiple times in a single movement.
 
-4. The Colosseum Walls may be traversed in this fashion during a Normal, Advance, Fall-Back, or Charge move.
+4. The Colosseum Walls may only be traversed in this fashion during a Normal, Advance, Fall-Back, or Charge move.
 
-5. Models must retain their orientation before traversing Colosseum Walls in this way.
+5. Models must retain their orientation during their traversal of Colosseum Walls.
 
-6. A model may not traverse the Colosseum Wall in this way if doing so would cause it's base to overlap with that of another model.
+6. A model may not traverse the Colosseum Wall if doing so would cause its base to overlap with that of another model.
 
 7. Units disembarking from transports may not be set up on the opposite side of Colosseum Walls as the transport they are disembarking from.
 
