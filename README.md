@@ -114,3 +114,63 @@ Scenarios:
 Chance of killing self with double broadside:
 - (1-(5^6/6^6))
 = 0.66
+
+
+Average damage of Sternguard (Ultramarines, no Rapid Fire, dev wounds only):
+- ( 16 * (8/9) * 0.30555 ) + ( 6 * (0.75) * 0.30555 * 2 )
+= 4.34 + 2.75 = 7.09
+
+Average damage of Sternguard (Ultramarines, Rapid Fire, dev wounds only):
+- ( 24 * (8/9) * 0.30555 ) + ( 6 * (0.75) * 0.30555 * 2 )
+= 6.52 + 2.75 = 9.27
+
+
+Average damage of Sternguard (Ravenguard, no Rapid Fire, dev wounds only):
+- ( 16 * (0.75) * 0.30555 ) + ( 6 * (0.75) * 0.30555 * 2 )
+= 3.67 + 2.75 = 6.42
+
+Average damage of Sternguard (Ravenguard, Rapid Fire, dev wounds only):
+- ( 24 * (8/9) * 0.30555 ) + ( 6 * (8/9) * 0.30555 * 2 )
+= 6.52 + 3.25 = 9.77
+
+
+Average Sternguard overwatch (Rapid Fire)
+- ( 24 * 0.30555 * 0.30555 ) + ( 6 * (0.30555 * 2) * 0.30555 * 2 )
+= 2.24 + 2.24 = 4.48
+
+Average Sternguard overwatch (no Rapid Fire)
+- ( 16 * 0.30555 * 0.30555 ) + ( 6 * (0.30555 * 2) * 0.30555 * 2 )
+= 1.49 + 2.24 = 3.73
+
+* note: odds of 6 with re-rolls is (1-((5^2)/(6^2))), 0.30555
+
+# Matt Prep
+
+Given a choice, pick Defender and go Adapt or Die.
+If Attacker, pick linchpin
+
+## Deployment vs Matt
+
+
+1. Intercessors - Home Right
+
+Case A: Impulsor Left
+Case B: Impulsor Center
+Case C: Impulsor Right
+Case D: Sterngard Left
+Case E: Sterngard Right
+
+Scenario A:
+2. Inceptors tucked Right???
+    * No matter where he drops sterngard, drop BGVs infiltrating Right and Inceptors tucked Right
+
+Scenario B:
+2. Inceptors tucked Right
+* Sterngard Left ?: 
+* Sterngard Right ?:
+
+Scenario C:
+2. Inceptors tucked Right
+* Sterngard Left ?:
+* Sterngard Center ?:
+* Sterngard Right ?:
