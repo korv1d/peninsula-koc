@@ -10,7 +10,7 @@ Each match consists of a best of 3 series of games.
 
 3. Each list must contain two units of non-character Infantry.
 
-4. No epic heroes.
+4. No epic heroes. No Legends units.
 
 5. Battleline units may advance, shoot, and perform actions on the same turn.
 
@@ -33,9 +33,9 @@ RUINSCAPE
 LORDS OF WAR  
 ADEPT OR DIE  
 
-6. The winner of a game becomes the Defender in the next game of the best of 3.
+6. The winner of a game becomes the Defender in the next game of the best of 3 (Players determine Attacker/Defender normally game 1)
 
-7. Challenger cards will be used in game.
+7. Challenger cards are not to be used.
 
 8. Units that can infiltrate may not be deployed touching more than one No Mans Land objectives
 
