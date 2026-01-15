@@ -1,8 +1,8 @@
-# Rules
+## Rules
 
 Each match consists of a best of 3 series of games.
 
-## Army Composition
+### Army Composition
 
 1. Each player must compose a army list not exceeding 500 points, with one character specified as Warlord.
 
@@ -14,7 +14,7 @@ Each match consists of a best of 3 series of games.
 
 5. Battleline units may advance, shoot, and perform actions on the same turn.
 
-## Logistics
+### Logistics
 
 1. Players will play on the Play-on-Tabletop Colosseum board, depicted below.
 
@@ -39,7 +39,7 @@ ADEPT OR DIE
 
 8. Units that can infiltrate may not be deployed touching more than one No Mans Land objectives
 
-## Terrain Rules
+### Terrain Rules
 
 1. All L-shaped terrain pieces and all straight terrain pieces are ruins. These ruins’ footprint is defined by the physical space in which they are in contact with the ground. All [Core Rules](https://wahapedia.ru/wh40k10ed/the-rules/core-rules/#Terrain-Features-1) regarding ruins apply to this terrain, as does the Games Workshop rules commentary.
 
