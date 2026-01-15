@@ -10,7 +10,7 @@ Each match consists of a best of 3 series of games.
 
 3. Each list must contain two units of non-character Infantry.
 
-4. No epic heroes. No Legends units.
+4. No epic heroes. No Legends units. No special characters (Emperor's Champion, The Sanguinor, etc).
 
 5. Battleline units may advance, shoot, and perform actions on the same turn.
 
@@ -57,23 +57,6 @@ ADEPT OR DIE
 
 8. The Colosseum Walls are considered to be 1.01" thick, meaning that two opposing models on opposite sides of the wall cannot be considered to be within engagement range of one another
 
-9. For the purposes of the Sabotage secondary mission, Colosseum walls are considered to be wholly within the deployment zone of the player whose side they are on. Being in base-to-base contact with a Colosseum Wall makes a unit eligible to perform the Sabotage action.
+9. All ruins are considered infinitely tall for the purposes of visibility.
 
-
-
-
-Hey,
-
-Call me out if I'm out of line but I wanted to give you my two cents-
-
-I feel like our group has lost something because of how open the discord server became. I can't tell you how much fun I have had since finding this group and I'm grateful it exists. The server was a personal space where people who met up and had fun in person could joke around, banter, talk about epic battles, etc.
-
-Today, I feel the familiar voices of people who make time in their schedules to attend these narratives you put together have been drowned out by a couple of loud voices- they don't show up up to events, they don't make an effort to form community, they do h
-
-
-----
-
-
-Yo, wanted to get your thoughts on something;
-
-Do you feel the beginners league server is a bit less vibrant than before? I feel like its the same 2-3 people kind of commenting at random about what they're thinking about buying, the latest youtube gossip, whatever. If they showed up thats one thing but I don't think I've even met these people.
+10. For the purposes of the Sabotage secondary mission, Colosseum walls are considered to be wholly within the deployment zone of the player whose side they are on. Being in base-to-base contact with a Colosseum Wall makes a unit eligible to perform the Sabotage action.
