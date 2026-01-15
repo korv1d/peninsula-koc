@@ -59,4 +59,4 @@ ADEPT OR DIE
 
 9. All ruins are considered infinitely tall for the purposes of visibility.
 
-10. For the purposes of the Sabotage secondary mission, Colosseum walls are considered to be wholly within the deployment zone of the player whose side they are on. Being in base-to-base contact with a Colosseum Wall makes a unit eligible to perform the Sabotage action.
+10. For the purposes of the Sabotage secondary mission, Colosseum Walls are considered to be wholly within the deployment zone of the player whose side they are on. Being in base-to-base contact with a Colosseum Wall makes a unit eligible to perform the Sabotage action.
