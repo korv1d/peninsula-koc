@@ -37,7 +37,7 @@ ADEPT OR DIE
 
 7. Challenger cards are not to be used.
 
-8. Units that can infiltrate may not be deployed touching more than one No Mans Land objectives
+8. INFILTRATE units may not be deployed touching more than one No Mans Land objectives
 
 ### Terrain Rules
 
