@@ -14,6 +14,10 @@ Each match consists of a best of 3 series of games.
 
 5. Battleline units may advance, shoot, and perform actions on the same turn.
 
+6. A list must be made available for public viewing on this website before being used.
+
+7. Players are entitled to a single list change during the season. Notify Rhys if you change your list.
+
 ### Logistics
 
 1. Players will play on the Play-on-Tabletop Colosseum board, depicted below.
@@ -37,7 +41,7 @@ ADEPT OR DIE
 
 7. Challenger cards are not to be used.
 
-8. INFILTRATE units may not be deployed touching more than one No Mans Land objectives
+8. INFILTRATE units may not be deployed touching more than one No Mans Land objectives.
 
 ### Terrain Rules
 
