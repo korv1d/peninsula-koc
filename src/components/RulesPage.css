@@ -1,42 +1,38 @@
-.rules-container {
-    margin-top: 2rem;
-    line-height: 1.6;
-    font-size: 1rem;
-    max-width: 80vw;
+.rules-page-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    /* leave space for navbar */
+    min-height: calc(100vh - 64px);
+    background: linear-gradient(120deg, #23243a 0%, #181a24 100%);
 }
 
-/* Headings */
-.rules-container h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.rules-page-content {
+    background: rgba(30, 32, 44, 0.92);
+    /* match other page backgrounds */
+    border-radius: 18px;
+    padding: 2rem 4vw;
+    box-shadow: 0 4px 32px #000a;
+    max-width: 80%;
+    /* text wraps at 80% of page width */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.rules-page-content h1,
+.rules-page-content h2,
+.rules-page-content h3 {
     color: #7ecfff;
 }
 
-.rules-container h2 {
-    font-size: 1.4rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    color: #9fd7ff;
+.rules-page-content a {
+    color: #7ecfff;
+    text-decoration: underline;
 }
 
-/* Lists */
-.rules-container ul {
-    padding-left: 1.5rem;
-}
-
-.rules-container li {
-    margin-bottom: 0.4rem;
-}
-
-/* Code blocks (if you ever add them) */
-.rules-container pre {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 0.75rem;
+.rules-page-content pre {
+    background: #222;
+    padding: 0.5rem;
     border-radius: 6px;
     overflow-x: auto;
-}
-
-/* Error text */
-.error-text {
-    color: #ff6b6b;
 }

@@ -95,6 +95,10 @@ Devastator, AOC:
 - ( 6 * (8/9) * 35/36 * (5/6))
 = 4.320
 
+Intercessors:
+- ( 20 * (8/9) * (2/3) * (1/3))
+= 3.95 W => 1 Kill
+
 Scenarios:
 1. Ultras
 1.1. AoC, then Devastator:       = 7-7.8 kills (2.59+5.18)
@@ -102,8 +106,8 @@ Scenarios:
 2. Ravenguard
 2.1 AoC, then Fusilade:          = 6-7.3 kills (2.59+4.72)
 2.1 No AoC, then AoC Fusilade:   = 6-7.2 kills (3.45+3.78)
-3. Double base, no AoC:          = 6-7 kills 
-4. Double base, one AoC:         = 5-6 kills
+3. Double base, no AoC:          = 6-7 kills   (3.45+3.45)
+4. Double base, one AoC:         = 5-6 kills   (3.45+2.59)
 
 
 
