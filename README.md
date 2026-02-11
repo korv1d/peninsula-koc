@@ -174,4 +174,3 @@ Scenario C:
 * Sterngard Left ?:
 * Sterngard Center ?:
 * Sterngard Right ?:
-
