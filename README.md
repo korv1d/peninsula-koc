@@ -16,10 +16,15 @@ Visualize the matchups, lists, and rankings of the Warhammer 40,000 Peninsula Ki
 - Leaderboard entries should display the highest score/best value even when Contested
 - Expand tournament bracket from 8 players to however many exist
 - Beautify tournament bracket
+- Integrate Roman's app?
 
 ## Contributions
 
-Help wanted! The technically inclined are welcome to contribute to this humble website.
+Help wanted! The technically inclined are welcome to contribute to this humble website.  
+
+The site code is organized into 4 typescript pages: main, rules, leaderboard, and lists. The most complicated element is the TournamentBracket object, which takes the file `tournament.json` file and populates the Bracket. All pages derive data and perform calculations based on the contents of the player files located in `./public/`.
+
+Deployment is managed automatically by Cloudflare workers. Pushing to `main` triggers a new release.
 
 ## Testing
 
