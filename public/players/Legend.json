@@ -1,10 +1,11 @@
 {
     "name": "Legend",
-    "list": "ORKS of da Kolosseum (495 Points)\n\nOrks\nWar Horde\n\nCHARACTERS\n\nWarboss in Mega Armour (105 Points)\n • Warlord\n • 1x 'Uge choppa\n 1x Big shoota\n • Enhancement: Follow Me Ladz\n\nBATTLELINE\n\nBeast Snagga Boyz (95 Points)\n • 1x Beast Snagga Nob\n • 1x Power snappa\n 1x Slugga\n • 9x Beast Snagga Boy\n • 9x Choppa\n 9x Slugga\n\nBoyz (80 Points)\n • 1x Boss Nob\n • 1x Big choppa\n 1x Slugga\n • 9x Boy\n • 9x Choppa\n 9x Slugga\n\nOTHER DATASHEETS\n\nDeff Dread (120 Points)\n • 3x Dread klaw\n 1x Skorcha\n 1x Stompy feet\n\nMeganobz (95 Points)\n • 3x Twin killsaws",
-    "winrate": 0.0,
+    "army": "Leagues of Votann — Needgâard Oathband",
+    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Xenos - Leagues of Votann\n+ DETACHMENT: Armoured Trailblazers, Needgaârd Oathband (Sagitaur Spearhead)\n+ FORCE DISPOSITION: Purge the Foe\n+ TOTAL ARMY POINTS: 500pts\n+\n+ WARLORD: Char1: Memnyr Strategist\n+ NUMBER OF UNITS: 6\n+ SECONDARY: - Bring It Down: (1x2) - Assassination: 1 Characters\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Memnyr Strategist (45 pts): Warlord, Autoch-pattern bolt pistol, Close combat weapon\nLeading Ironkin Steeljacks with Heavy Volkanite Disintegrators\n\n10x Hearthkyn Warriors (100 pts)\n• 9x Hearthkyn Warrior\n    7 with Autoch-pattern bolt pistol, Autoch-pattern bolter, Close combat weapon\n    1 with Autoch-pattern bolt pistol, Close combat weapon, HYLas auto rifle\n    1 with Autoch-pattern bolt pistol, Close combat weapon, Magna-rail rifle\n• 1x Theyn: Weavefield crest, Autoch-pattern bolt pistol, Close combat weapon, Autoch-pattern bolter\n\n3x Brôkhyr Thunderkyn (80 pts): 3 with Close combat weapon, SP conversion beamer\n2x Cthonian Earthshakers (110 pts): 2 with 2x Autoch-pattern bolt pistol, Plasma picks, Tremor shells \n3x Ironkin Steeljacks with Heavy Volkanite Disintegrators (80 pts)\n• 1x Steeljack Theyn: Preymark crest, Heavy volkanite disintegrator, Plasma knife\n• 2x Ironkin Steeljack: 2 with Heavy volkanite disintegrator, Plasma knife\n  Attached to Memnyr Strategist\n1x Sagitaur (85 pts): Armoured wheels, Twin bolt cannon, HYLas beam cannon\n\nCreated with newrecruit.eu v35.36",
+    "winrate": 0,
     "mostEnemiesKilled": 0,
-    "greatestPointsDifference": 45,
-    "highestScore": 63,
+    "greatestPointsDifference": 0,
+    "highestScore": 0,
     "mostPointsInRound": 0,
     "shortestGame": "",
     "shortestTurn": ""

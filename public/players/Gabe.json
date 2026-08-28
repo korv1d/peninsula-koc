@@ -1,7 +1,8 @@
 {
     "name": "Gabe",
-    "list": "Blood Angels\nLiberator Assault Group\n\nChaplain with Jump Pack (Warlord)\nPlasma Pistol\nCrozius Arcanum\nEnhancement: Speed of the Primarch\nAssault Intercessors with Jump Pack\nSergent:Plasma Pistol and Power fist\n3 Assault intercessors with Astartes Chainsword  and Heavy Bolt Pistols\nAssault intercessor with Astartes Chainsword and Plasma Pistol\nHellblaster Squad\nHellblaster 4: Plasma Incinerators and Bolt Pistol\nHelblaster Sergent: Plasma incinerator and Plasma pistol\nImpulsur\nShield Dome\nIronhail heavy stubber\n2 storm bolters\nDeath Company Marines with Jump Packs (Lead by Chaplain with Jump Pack)\n2 with astartes chainsword and heavy bolt pistol\n1 eviscerator and plasma pistol\n1 Power fist and inferno pistol\n1 power fist and heavy bolt pistol",
-    "winrate": 0.0,
+    "army": "Blood Angels — The Blood Host",
+    "list": "Blood Angels: The Blood Host\nDetachments:\nThe Angelic Host 2pts\nVengeful Hosts 1pts\nForce Disposition: Take and Hold\nCaptain with Jump Pack (warlord) (80)\nPlasma Pistol \nPower Fist\nOrksbane (Enhancement) (20)\nLeading Sanguinary Guard\nSanguinary Guard (125)\n2x Encarmine Spear, Angelus Boltgun\n1x Encarmine Spear, Inferno Pistol\n\nDeath Company Captain With Jump Pack (75)\nPower Pack\nPlasma Pistol\nLeading Death Company Marines with Jump Packs\nDeath Company Marines with Jump Packs (120)\n2x Death Company Marines with Jump Pack\nHeavy bolt Pistol\nAstartes chainsword\n1x Death Company Marines with Jump Pack\nPower fist\nPlasma pistol\n1x Death Company Marines with Jump Pack\nPower fist\nHeavy bolt pistol\n1x Death Company Marines with Jump Pack\nEviscerator\nPlasma pistol\nIntercessor Squad\nIntercessor Sergeant (80)\nBolt rifle\nPower fist\nBolt pistol\nClose combat weapon\n3x Intercessors\nBlot rifles\nBlot pistols\nClose combat weapon\nIntercessor \nBolt rifle w/ Grenade Launcher\nBolt pistol\nClose combat weapon",
+    "winrate": 0,
     "mostEnemiesKilled": 0,
     "greatestPointsDifference": 0,
     "highestScore": 0,

@@ -1,11 +1,12 @@
 {
     "name": "Nate",
-    "list": "KoC Assimilated Genes* (495 points)\n\nTyranids\nIncursion (1000 points)\nAssimilation Swarm\n\nCHARACTERS\n\nBroodlord (95 points)\n • Warlord\n • 1x Broodlord claws and talons\n • Enhancement: Instinctive Defence\n\nOTHER DATASHEETS\n\nGenestealers (140 points)\n • 10x Genestealer\n • 10x Genestealers claws and talons\n\nPsychophage (110 points)\n • 1x Psychoclastic torrent\n 1x Talons and betentacled maw\n\nPyrovores (40 points)\n • 1x Chitin-barbed limbs\n 1x Flamespurt\n\nPyrovores (40 points)\n • 1x Chitin-barbed limbs\n 1x Flamespurt\n\nVenomthropes (70 points)\n • 3x Venomthrope\n • 3x Toxic lashes",
-    "winrate": 1.0,
-    "mostEnemiesKilled": 26,
-    "greatestPointsDifference": 16,
-    "highestScore": 58,
-    "mostPointsInRound": 19,
+    "army": "Tyranids — Ambush Predators / Synaptic Nexus",
+    "list": "koc battle shockers (495 points)\n\nTyranids\nAmbush Predators and Synaptic Nexus (3 Detachment Points)\nDisruption\n\nCHARACTERS\nNeurotyrant (145 points)\n  • Warlord\n  • 1x Neurotyrant claws and lashes\n    1x Psychic scream\n  • Enhancement: The Dirgeheart of Kharis (Aura)\n\n\nOTHER DATASHEETS\nNeurolictor (80 points)\n  • 1x Piercing claws and talons\n\nScreamer-Killer (125 points)\n  • 1x Bio-plasmic scream\n    1x Screamer-Killer talons\n\nVenomthropes (55 points)\n  • 3x Venomthrope\n    • 3x Toxic lashes\n\nZoanthropes (90 points)\n  • 1x Neurothrope\n    • 1x Chitinous claws and teeth\n      1x Warp Blast\n  • 2x Zoanthrope\n    • 2x Chitinous claws and teeth\n      2x Warp Blast",
+    "winrate": 0,
+    "mostEnemiesKilled": 0,
+    "greatestPointsDifference": 0,
+    "highestScore": 0,
+    "mostPointsInRound": 0,
     "shortestGame": "",
     "shortestTurn": ""
 }

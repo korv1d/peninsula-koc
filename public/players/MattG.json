@@ -1,11 +1,12 @@
 {
     "name": "MattG",
-    "list": "+++++++++++++++++++++++++++++++++++++++++++++++\n+ FACTION KEYWORD: Imperium - Adeptus Astartes - Blood Angels\n+ DETACHMENT: Liberator Assault Group\n+ TOTAL ARMY POINTS: 490pts\n+\n+ WARLORD: Char1: Sanguinary Priest\n+ ENHANCEMENT: Speed of the Primarch (on Char1: Sanguinary Priest)\n+ NUMBER OF UNITS: 4\n+ SECONDARY: - Bring It Down: (1x2) - Assassination: 1 Characters\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nChar1: 1x Sanguinary Priest (100 pts): Warlord, Absolver Bolt Pistol, Astartes Chainsword\nEnhancement: Speed of the Primarch (+25 pts)\n\n5x Hellblaster Squad (110 pts)\n• 4x Hellblaster: 4 with Bolt pistol, Close combat weapon, Plasma Incinerator\n• 1x Hellblaster Sergeant: Close combat weapon, Plasma Incinerator, Plasma Pistol\n1x Impulsor (80 pts): Shield Dome, Armoured Hull, Ironhail Heavy Stubber, 2x Storm Bolter\n10x Sternguard Veteran Squad (200 pts)\n• 9x Sternguard Veteran\n 7 with Close combat weapon, Sternguard Bolt Pistol, Sternguard Bolt Rifle\n 2 with Close combat weapon, Sternguard Bolt Pistol, Sternguard Heavy Bolter\n• 1x Sternguard Veteran Sergeant: Close combat weapon, Sternguard Bolt Pistol, Power Fist, Sternguard Bolt Rifle",
-    "winrate": 0.66,
-    "mostEnemiesKilled": 19,
+    "army": "Blood Angels — Bastion Task Force",
+    "list": "KoC - Shock and Awe\n\nSpace Marine Blood Angels (480pts)\n\nBastion Task Force    2DP\n\nLegacy of Grace        1DP\n\n\nCaptain With Jump Pack         - 80 pts\n    Hero of the Chapter    - 20pts\n\n    Plasma Pistol\n    Power Fist\n\nChaplain            - 60 pts\n\n    Absolvor bolt pistol\n    Crozius arcanum\n\nSanguinary Guard (x6)        - 260 pts\n\n    Angelus boltgun (x4)\n    Inferno pistol  (x2)\n    Encarmine spear (x6)\n    Sanguinary Banner\n\nAssault Intercessor Squad (x5)    - 80 pts\n\n    Plasma Pistol\n    Heavy bolt pistol (x4)\n    Power fist\n    Astartes chainsword(x4)",
+    "winrate": 0,
+    "mostEnemiesKilled": 0,
     "greatestPointsDifference": 0,
     "highestScore": 0,
     "mostPointsInRound": 0,
-    "shortestGame": "00:56:21",
+    "shortestGame": "",
     "shortestTurn": ""
 }
