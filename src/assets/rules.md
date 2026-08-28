@@ -12,17 +12,37 @@ Each match consists of a best of 3 series of games.
 
 4. No epic heroes. No Legends units. No special characters (Emperor's Champion, The Sanguinor, etc).
 
-5. Battleline units may advance, shoot, and perform actions on the same turn.
+<!-- 5. Battleline units may advance, shoot, and perform actions on the same turn. -->
+5. You may not take 2 of the same unit, unless that unit is Battleline, in which case you may take no more than 2 of that unit.
 
 6. A list must be made available for public viewing on this website before being used.
 
-7. Players are entitled to a single list change during the season. Notify Rhys if you change your list.
+7. Players are entitled to a single list change during the season. Notify Rhys if you change your list. Lists may only be changed prior to the semi finals.
 
 ### Logistics
 
-1. Players will play on the Play-on-Tabletop Colosseum board, depicted below.
+1. Players will play on the Play-on-Tabletop Colosseum board.
 
-2. Deployment Zones extend 9 inches from a player's side of the field.
+2. Each match will be a best-of-3 game series
+
+3. Deployment Zones extend 9 inches from a player's side of the field. A player's Terrirory extends 18" from a player's side of the field.
+
+4. For all rules purposes, a player's Expansion Objective is the rightmost objective in No Mans Land when viewed from that player's side of the table.
+
+5. Players may use up to 3 Detachment Points and will use the Forced Dispositions of their armies as laid out in the Core Rules.
+<!-- Question: Does this mean I can use a 2DP and then a 1 DP? -->
+
+6. Players roll off to determine Attacker and Defender, with the Attacker being able to choose the Mission Twist from the listed below:
+RUINSCAPE
+MARTIAL PRIDE
+SCRAMBLED COMMUNICATIONS
+
+7. From game 2 onwards, the loser of the previous game decides to be Attacker or Defender.
+
+8. INFILTRATE units may not be deployed touching more than 1 Objective outside of their Deployment Zone.
+
+<!-- Question: Can players switch between force dispositions between games? What about within the same best of 3? -->
+<!-- Q: -->
 
 3. Players determine Attacker and Defender prior to the Read Mission Objectives setup step. 
 
