@@ -12,7 +12,6 @@ Each match consists of a best of 3 series of games.
 
 4. No epic heroes. No Legends units. No special characters (Emperor's Champion, The Sanguinor, etc).
 
-<!-- 5. Battleline units may advance, shoot, and perform actions on the same turn. -->
 5. You may not take 2 of the same unit, unless that unit is Battleline, in which case you may take no more than 2 of that unit.
 
 6. A list must be made available for public viewing on this website before being used.
