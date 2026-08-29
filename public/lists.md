@@ -1,32 +1,17 @@
 James:
 ```
-+++++++++++++++++++++++++++++++++++++++++++++++
-+ FACTION KEYWORD: Chaos - World Eaters
-+ DETACHMENT: Berzerker Warband (Relentless Rage)
-+ FORCE DISPOSITION: Purge the Foe
-+ TOTAL ARMY POINTS: 495pts
-+
-+ WARLORD: Char1: Master of Executions
-+ NUMBER OF UNITS: 5
-+ SECONDARY: - Bring It Down: (1x2) - Assassination: 1 Characters
-+++++++++++++++++++++++++++++++++++++++++++++++
+Chaos - World Eaters - Gladiators WE - [500 pts]
 
-Char1: 1x Master of Executions (60 pts): Warlord, Axe of dismemberment, Bolt pistol
+Master of Executions [60 pts]
 
-3x Eightbound (125 pts)
-• 1x Eightbound Champion: Chainblades
-• 2x Eightbound: 2 with Chainblades
-3x Eightbound (125 pts)
-• 1x Eightbound Champion: Chainblades
-• 2x Eightbound: 2 with Chainblades
-1x Helbrute (120 pts): Close combat weapon, Helbrute hammer, Combi-bolter, Helbrute fist
-10x Jakhals (65 pts)
-• 1x Jakhal Pack Leader: Autopistol, Chainblades
-• 1x Dishonoured: Paired manglers
-• 8x Jakhal: 8 with Autopistol, Chainblades
+Eightbound [125 pts]:
+• 2x Eightbound
+Exalted Eightbound [130 pts]:
+• 2x Exalted Eightbound
+Jakhals [65 pts]: 8 chainblades
+• 1x Dishonoured w/ paired manglers
 
-Created with newrecruit.eu v35.68
-From James
+Helbrute [120 pts]
 ```
 
 Herbert:
