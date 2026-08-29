@@ -1,0 +1,169 @@
+{
+    "groups": [
+        {
+            "id": "A",
+            "name": "Group A",
+            "color": "blue",
+            "players": [
+                "MattG",
+                "Roman",
+                "Gabe",
+                "Herbert"
+            ],
+            "matches": [
+                {
+                    "round": 1,
+                    "p1": "MattG",
+                    "p2": "Roman",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 1,
+                    "p1": "Gabe",
+                    "p2": "Herbert",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 2,
+                    "p1": "MattG",
+                    "p2": "Gabe",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 2,
+                    "p1": "Roman",
+                    "p2": "Herbert",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 3,
+                    "p1": "MattG",
+                    "p2": "Herbert",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 3,
+                    "p1": "Roman",
+                    "p2": "Gabe",
+                    "p1Games": 0,
+                    "p2Games": 0
+                }
+            ]
+        },
+        {
+            "id": "B",
+            "name": "Group B",
+            "color": "red",
+            "players": [
+                "Ayden",
+                "James",
+                "EvilIan",
+                "Legend"
+            ],
+            "matches": [
+                {
+                    "round": 1,
+                    "p1": "Ayden",
+                    "p2": "James",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 1,
+                    "p1": "EvilIan",
+                    "p2": "Legend",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 2,
+                    "p1": "Ayden",
+                    "p2": "EvilIan",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 2,
+                    "p1": "James",
+                    "p2": "Legend",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 3,
+                    "p1": "Ayden",
+                    "p2": "Legend",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 3,
+                    "p1": "James",
+                    "p2": "EvilIan",
+                    "p1Games": 0,
+                    "p2Games": 0
+                }
+            ]
+        },
+        {
+            "id": "C",
+            "name": "Group C",
+            "color": "green",
+            "players": [
+                "Hugo",
+                "Francisco",
+                "Ian",
+                "Nate"
+            ],
+            "matches": [
+                {
+                    "round": 1,
+                    "p1": "Hugo",
+                    "p2": "Francisco",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 1,
+                    "p1": "Ian",
+                    "p2": "Nate",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 2,
+                    "p1": "Hugo",
+                    "p2": "Ian",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 2,
+                    "p1": "Francisco",
+                    "p2": "Nate",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 3,
+                    "p1": "Hugo",
+                    "p2": "Nate",
+                    "p1Games": 0,
+                    "p2Games": 0
+                },
+                {
+                    "round": 3,
+                    "p1": "Francisco",
+                    "p2": "Ian",
+                    "p1Games": 0,
+                    "p2Games": 0
+                }
+            ]
+        }
+    ]
+}

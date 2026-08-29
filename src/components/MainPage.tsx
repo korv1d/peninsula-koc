@@ -4,7 +4,7 @@ import './MainPage.css';
 
 import bannerLeft from '../assets/banner_left.png';
 import bannerRight from '../assets/banner_right.png';
-import TournamentBracket from './TournamentBracket';
+import GroupStage from './GroupStage';
 
 const MainPage: React.FC = () => {
     return (
@@ -18,9 +18,8 @@ const MainPage: React.FC = () => {
                     className="marine-img left"
                 />
 
-                {/* ✅ MAIN-ONLY wrapper */}
                 <div className="main-bracket-container">
-                    <TournamentBracket />
+                    <GroupStage />
                 </div>
 
                 <img

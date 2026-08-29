@@ -1,8 +1,77 @@
 James:
+```
++++++++++++++++++++++++++++++++++++++++++++++++
++ FACTION KEYWORD: Chaos - World Eaters
++ DETACHMENT: Berzerker Warband (Relentless Rage)
++ FORCE DISPOSITION: Purge the Foe
++ TOTAL ARMY POINTS: 495pts
++
++ WARLORD: Char1: Master of Executions
++ NUMBER OF UNITS: 5
++ SECONDARY: - Bring It Down: (1x2) - Assassination: 1 Characters
++++++++++++++++++++++++++++++++++++++++++++++++
 
+Char1: 1x Master of Executions (60 pts): Warlord, Axe of dismemberment, Bolt pistol
+
+3x Eightbound (125 pts)
+• 1x Eightbound Champion: Chainblades
+• 2x Eightbound: 2 with Chainblades
+3x Eightbound (125 pts)
+• 1x Eightbound Champion: Chainblades
+• 2x Eightbound: 2 with Chainblades
+1x Helbrute (120 pts): Close combat weapon, Helbrute hammer, Combi-bolter, Helbrute fist
+10x Jakhals (65 pts)
+• 1x Jakhal Pack Leader: Autopistol, Chainblades
+• 1x Dishonoured: Paired manglers
+• 8x Jakhal: 8 with Autopistol, Chainblades
+
+Created with newrecruit.eu v35.68
+From James
+```
 
 Herbert:
+```
+Angels (500 Points)
 
+Space Marines
+Blood Angels
+Liberator Assault Group (3 Detachment Points)
+Take and Hold
+Strike Force (2,000 Points)
+
+CHARACTERS
+
+Captain with Jump Pack (80 Points)
+  • 1x Plasma pistol
+  • 1x Relic weapon
+
+OTHER DATASHEETS
+
+Centurion Devastator Squad (175 Points)
+  • 1x Devastator Centurion Sergeant
+     ◦ 1x Centurion bolters
+     ◦ 1x Centurion fists
+     ◦ 1x Grav-cannon
+  • 2x Devastator Centurion
+     ◦ 2x Centurion bolters
+     ◦ 2x Centurion fists
+     ◦ 2x Grav-cannon
+
+Death Company Marines with Jump Packs (120 Points)
+  • 5x Death Company Marine with Jump Packs
+     ◦ 3x Astartes chainsword
+     ◦ 1x Eviscerator
+     ◦ 5x Heavy bolt pistol
+     ◦ 1x Power weapon
+
+Sanguinary Guard (125 Points)
+  • 3x Sanguinary Guard
+     ◦ 2x Angelus boltgun
+     ◦ 3x Encarmine blade
+     ◦ 1x Inferno pistol
+
+Exported with App Version: v2.4.0 (1), Data Version: v925
+```
 
 Roman:
 ```

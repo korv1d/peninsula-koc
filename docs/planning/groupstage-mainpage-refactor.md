@@ -1,6 +1,8 @@
 # Planning: Replace the Main Page Bracket with a Group Stage View
 
-Status: §3 (roster + player JSON reseed) **done**; §4-§8 still to build.
+Status: **implemented.** §3 (roster + player JSON reseed) and §4-§8 (data model,
+components, styling, MainPage wiring) are all in the tree. Outstanding: the real
+group draw (§4.1 ships a placeholder), and Herbert's and James's lists.
 Branch to work on: `season2`
 Scope: `/` (MainPage) only. `/leaderboard`, `/rules`, `/lists` keep their current
 behaviour, though both read the player JSONs that §3 rewrote.
@@ -136,8 +138,8 @@ this file can be committed for real. Every name in it must appear in
 it. (Rejected alternative, kept for the record: per-player fields like
 `roundRobinRound1`.) The reasoning, since it constrains §5 —
 
-Storing the record and score per player means the record and score per player: a single match
-a single match result has to be written into two files consistently, and this
+Storing the record and score per player means a single match result has to be
+written into two files consistently, and this
 repo already has a stale-duplicate-data problem (`src/players/` vs
 `public/players/`). So `groups.json` is the only truth for results, and the page
 computes per player:
@@ -181,11 +183,18 @@ Herbert and James.
 
 ### 4.4 `src/types.ts`
 
+Note one deviation from the draft below: `army` shipped as **required**
+(`army: string`), not optional. `LeaderboardPage` derives `NumericPlayerKey` with
+a mapped type over `keyof Player`, and an optional property makes that mapped
+type optional too, leaking `undefined` into the key union and breaking `tsc`.
+Every player file has the field (Herbert and James carry `""`), so requiring it
+is also truer to the data.
+
 ```ts
 export interface Player {
     name: string;
     list: string;
-    army?: string;          // NEW - short faction/detachment label
+    army: string;           // NEW - short faction/detachment label
     winrate: number;
     // ...existing stat fields unchanged
 }

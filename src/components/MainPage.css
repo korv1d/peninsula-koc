@@ -6,7 +6,6 @@ html,
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
 }
 
 .main-bg {
@@ -18,11 +17,12 @@ html,
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    padding-bottom: 3rem;
 }
 
 .main-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 24px;
     min-height: calc(100vh - 64px);
@@ -35,12 +35,11 @@ html,
     margin: 0 2vw;
 }
 
-.marine-img.left {
-    align-self: flex-start;
-}
-
+.marine-img.left,
 .marine-img.right {
-    align-self: flex-end;
+    position: sticky;
+    top: 60px;
+    align-self: flex-start;
 }
 
 /* Shared bracket-container for all pages, now fills width for lists */
@@ -69,11 +68,7 @@ html,
     opacity: 0.7;
 }
 
-.marine-img.left {
-    height: 720px;
-    width: 308px;
-}
-
+.marine-img.left,
 .marine-img.right {
     height: 720px;
     width: 308px;
@@ -91,7 +86,7 @@ html,
 
     border-radius: 18px;
     box-shadow: 0 4px 32px #000a;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .main-bracket-container::before {
@@ -110,6 +105,7 @@ html,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: inherit;
 
     /* Johanna 3 (Background transparency) */
     opacity: .9; /* 50% transparency */
