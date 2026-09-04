@@ -145,13 +145,15 @@ Assault Intercessor Squad (x5)    - 80 pts
 
 Nate:
 ```
-koc battle shockers (495 points)
+koc battle shockers (500 points)
 
 Tyranids
-Ambush Predators and Synaptic Nexus (3 Detachment Points)
-Disruption
+Synaptic Nexus and Warrior Bioform Onslaught (3 Detachment Points)
+Take and Hold
+
 
 CHARACTERS
+
 Neurotyrant (145 points)
   • Warlord
   • 1x Neurotyrant claws and lashes
@@ -159,17 +161,26 @@ Neurotyrant (145 points)
   • Enhancement: The Dirgeheart of Kharis (Aura)
 
 
+BATTLELINE
+
+Tyranid Warriors with Ranged Bio-weapons (60 points)
+  • 1x Tyranid Prime
+    • 1x Deathspitter
+      1x Tyranid Warrior claws and talons
+  • 2x Tyranid Warrior
+    • 1x Barbed strangler
+      2x Tyranid Warrior claws and talons
+      1x Venom cannon
+
+
 OTHER DATASHEETS
+
 Neurolictor (80 points)
   • 1x Piercing claws and talons
 
 Screamer-Killer (125 points)
   • 1x Bio-plasmic scream
     1x Screamer-Killer talons
-
-Venomthropes (55 points)
-  • 3x Venomthrope
-    • 3x Toxic lashes
 
 Zoanthropes (90 points)
   • 1x Neurothrope
