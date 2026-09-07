@@ -1,12 +1,14 @@
 {
     "name": "Ian",
-    "army": "Chaos Knights — Houndpack Lance / Iconoclast Fiefdom",
-    "list": "KOC (500 Points)\n\nChaos Knights\nHoundpack Lance and Iconoclast Fiefdom (3 Detachment Points)\nTake and Hold\nStrike Force (2,000 Points)\n\nCHARACTERS\n\nWar Dog Brigand (140 Points)*\n  • Warlord\n  • Houndpack Lance Keyword: Character\n  • 1x Armoured feet\n  • 1x Avenger chaincannon\n  • 1x Daemonbreath spear\n  • 1x Havoc multi-launcher\n\nThis Datasheet also has the Battleline keyword\n\nWar Dog Executioner (130 Points)*\n  • Houndpack Lance Keyword: Character\n  • 1x Armoured feet\n  • 1x Daemonbreath meltagun\n  • 2x War Dog autocannon\n\nThis Datasheet also has the Battleline keyword\n\nWar Dog Executioner (130 Points)*\n  • Houndpack Lance Keyword: Character\n  • 1x Armoured feet\n  • 1x Daemonbreath meltagun\n  • 2x War Dog autocannon\n\nThis Datasheet also has the Battleline keyword\n\nALLIED UNITS\n\nCultist Mob (50 Points)\n  • 1x Cultist Champion\n     ◦ 1x Bolt pistol\n     ◦ 1x Brutal assault weapon\n  • 9x Chaos Cultist\n     ◦ 9x Autopistol\n     ◦ 9x Brutal assault weapon\n\nCultist Mob (50 Points)\n  • 1x Cultist Champion\n     ◦ 1x Bolt pistol\n     ◦ 1x Brutal assault weapon\n  • 9x Chaos Cultist\n     ◦ 9x Autopistol\n     ◦ 9x Brutal assault weapon\n\nExported with App Version: v2.4.0 (1), Data Version: v925",
-    "winrate": 0,
-    "mostEnemiesKilled": 0,
-    "greatestPointsDifference": 0,
-    "highestScore": 0,
+    "army": "Chaos Knights \u2014 Houndpack Lance / Iconoclast Fiefdom",
+    "list": "KOC (500 Points)\n\nChaos Knights\nHoundpack Lance and Iconoclast Fiefdom (3 Detachment Points)\nTake and Hold\nStrike Force (2,000 Points)\n\nCHARACTERS\n\nWar Dog Brigand (140 Points)*\n  \u2022 Warlord\n  \u2022 Houndpack Lance Keyword: Character\n  \u2022 1x Armoured feet\n  \u2022 1x Avenger chaincannon\n  \u2022 1x Daemonbreath spear\n  \u2022 1x Havoc multi-launcher\n\nThis Datasheet also has the Battleline keyword\n\nWar Dog Executioner (130 Points)*\n  \u2022 Houndpack Lance Keyword: Character\n  \u2022 1x Armoured feet\n  \u2022 1x Daemonbreath meltagun\n  \u2022 2x War Dog autocannon\n\nThis Datasheet also has the Battleline keyword\n\nWar Dog Executioner (130 Points)*\n  \u2022 Houndpack Lance Keyword: Character\n  \u2022 1x Armoured feet\n  \u2022 1x Daemonbreath meltagun\n  \u2022 2x War Dog autocannon\n\nThis Datasheet also has the Battleline keyword\n\nALLIED UNITS\n\nCultist Mob (50 Points)\n  \u2022 1x Cultist Champion\n     \u25e6 1x Bolt pistol\n     \u25e6 1x Brutal assault weapon\n  \u2022 9x Chaos Cultist\n     \u25e6 9x Autopistol\n     \u25e6 9x Brutal assault weapon\n\nCultist Mob (50 Points)\n  \u2022 1x Cultist Champion\n     \u25e6 1x Bolt pistol\n     \u25e6 1x Brutal assault weapon\n  \u2022 9x Chaos Cultist\n     \u25e6 9x Autopistol\n     \u25e6 9x Brutal assault weapon\n\nExported with App Version: v2.4.0 (1), Data Version: v925",
+    "winrate": 1.0,
+    "mostEnemiesKilled": 13,
+    "greatestPointsDifference": 82,
+    "highestScore": 90,
     "mostPointsInRound": 0,
-    "shortestGame": "",
-    "shortestTurn": ""
+    "shortestGame": "01:40:00",
+    "shortestTurn": "00:01:45",
+    "bringItDown": 0,
+    "invincible": 0
 }

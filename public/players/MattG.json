@@ -1,6 +1,6 @@
 {
     "name": "MattG",
-    "army": "Blood Angels — Bastion Task Force",
+    "army": "Blood Angels \u2014 Bastion Task Force",
     "list": "KoC - Shock and Awe\n\nSpace Marine Blood Angels (480pts)\n\nBastion Task Force    2DP\n\nLegacy of Grace        1DP\n\n\nCaptain With Jump Pack         - 80 pts\n    Hero of the Chapter    - 20pts\n\n    Plasma Pistol\n    Power Fist\n\nChaplain            - 60 pts\n\n    Absolvor bolt pistol\n    Crozius arcanum\n\nSanguinary Guard (x6)        - 260 pts\n\n    Angelus boltgun (x4)\n    Inferno pistol  (x2)\n    Encarmine spear (x6)\n    Sanguinary Banner\n\nAssault Intercessor Squad (x5)    - 80 pts\n\n    Plasma Pistol\n    Heavy bolt pistol (x4)\n    Power fist\n    Astartes chainsword(x4)",
     "winrate": 0,
     "mostEnemiesKilled": 0,
@@ -8,5 +8,7 @@
     "highestScore": 0,
     "mostPointsInRound": 0,
     "shortestGame": "",
-    "shortestTurn": ""
+    "shortestTurn": "",
+    "bringItDown": 0,
+    "invincible": 0
 }

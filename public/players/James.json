@@ -1,12 +1,14 @@
 {
     "name": "James",
-    "army": "World Eaters — Gladiators WE",
-    "list": "Chaos - World Eaters - Gladiators WE - [500 pts]\n\nMaster of Executions [60 pts]\n\nEightbound [125 pts]:\n• 2x Eightbound\nExalted Eightbound [130 pts]:\n• 2x Exalted Eightbound\nJakhals [65 pts]: 8 chainblades\n• 1x Dishonoured w/ paired manglers\n\nHelbrute [120 pts]",
+    "army": "World Eaters \u2014 Gladiators WE",
+    "list": "Chaos - World Eaters - Gladiators WE - [500 pts]\n\nMaster of Executions [60 pts]\n\nEightbound [125 pts]:\n\u2022 2x Eightbound\nExalted Eightbound [130 pts]:\n\u2022 2x Exalted Eightbound\nJakhals [65 pts]: 8 chainblades\n\u2022 1x Dishonoured w/ paired manglers\n\nHelbrute [120 pts]",
     "winrate": 0,
     "mostEnemiesKilled": 0,
     "greatestPointsDifference": 0,
     "highestScore": 0,
     "mostPointsInRound": 0,
     "shortestGame": "",
-    "shortestTurn": ""
+    "shortestTurn": "",
+    "bringItDown": 0,
+    "invincible": 0
 }

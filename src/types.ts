@@ -9,6 +9,10 @@ export interface Player {
     mostEnemiesKilled: number;
     greatestPointsDifference: number;
     highestScore: number;
+    /** Cumulative T9+ enemies destroyed across all games. */
+    bringItDown: number;
+    /** Most attacks a single model survived (saves made) in one activation. */
+    invincible: number;
 }
 
 export interface Match {

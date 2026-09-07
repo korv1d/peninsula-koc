@@ -5,7 +5,6 @@ import { PLAYER_NAMES } from '../constants/players';
 import './ListsPage.css';
 
 type DerivedMetricKey =
-    | 'mostPointsInRound'
     | 'shortestGame'
     | 'shortestTurn';
 
@@ -19,16 +18,15 @@ type Metric = {
     key: MetricKey;
     label: string;
     unit: string;
-    isPercent?: boolean;
     isTime?: boolean;
 };
 
 const metrics: Metric[] = [
-    { key: 'winrate', label: 'Winrate', unit: '%', isPercent: true },
     { key: 'mostEnemiesKilled', label: 'Most Enemies Killed', unit: 'models' },
     { key: 'greatestPointsDifference', label: 'Greatest Points Difference', unit: 'points' },
     { key: 'highestScore', label: 'Highest Score', unit: 'points' },
-    { key: 'mostPointsInRound', label: 'Most Points in a Round', unit: 'points' },
+    { key: 'bringItDown', label: 'Bring It Down!', unit: 'Colossi' },
+    { key: 'invincible', label: 'Invincible', unit: 'saves made' },
     { key: 'shortestGame', label: 'Shortest Game', unit: '', isTime: true },
     { key: 'shortestTurn', label: 'Shortest Turn', unit: '', isTime: true }
 ];
@@ -99,7 +97,7 @@ const LeaderboardPage: React.FC = () => {
 
         /* ---------- Numeric metrics ---------- */
         const key = metric.key as NumericPlayerKey;
-        let maxValue = Math.max(...players.map(p => p[key]));
+        const maxValue = Math.max(...players.map(p => p[key]));
 
         if (maxValue === 0) {
             return (
@@ -110,10 +108,6 @@ const LeaderboardPage: React.FC = () => {
         }
 
         const topPlayers = players.filter(p => p[key] === maxValue);
-
-        if (metric.isPercent) {
-            maxValue = Math.round(maxValue * 1000) / 10;
-        }
 
         return (
             <div className="leaderboard-entry" key={metric.key}>
