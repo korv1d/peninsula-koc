@@ -18,17 +18,18 @@ type Metric = {
     key: MetricKey;
     label: string;
     unit: string;
+    description: string;
     isTime?: boolean;
 };
 
 const metrics: Metric[] = [
-    { key: 'mostEnemiesKilled', label: 'Most Enemies Killed', unit: 'models' },
-    { key: 'greatestPointsDifference', label: 'Greatest Points Difference', unit: 'points' },
-    { key: 'highestScore', label: 'Highest Score', unit: 'points' },
-    { key: 'bringItDown', label: 'Bring It Down!', unit: 'Colossi' },
-    { key: 'invincible', label: 'Invincible', unit: 'saves made' },
-    { key: 'shortestGame', label: 'Shortest Game', unit: '', isTime: true },
-    { key: 'shortestTurn', label: 'Shortest Turn', unit: '', isTime: true }
+    { key: 'mostEnemiesKilled', label: 'On a Pale Horse', unit: 'models destroyed', description: 'Most enemy models destroyed in one battle' },
+    { key: 'invincible', label: 'Invincible', unit: 'saves made', description: 'Most saves a model passed and still lived' },
+    { key: 'bringItDown', label: 'Bring It Down!', unit: 'Colossi', description: 'Most enemy T9 models destroyed across all games' },
+    { key: 'greatestPointsDifference', label: 'Greatest Points Difference', unit: 'points', description: 'What it says on the tin' },
+    { key: 'highestScore', label: 'Highest Score', unit: 'points', description: 'Highest Score in one battle' },
+    { key: 'shortestGame', label: 'Shortest Game', unit: '', description: 'Shortest game', isTime: true },
+    { key: 'shortestTurn', label: 'Shortest Turn', unit: '', description: 'Shortest Turn', isTime: true }
 ];
 
 // Converts "HH:MM:SS" or "MM:SS" → seconds
@@ -76,8 +77,11 @@ const LeaderboardPage: React.FC = () => {
 
             if (minSeconds === Infinity) {
                 return (
-                    <div className="leaderboard-entry" key={metric.key}>
-                        {metric.label}: <span className="player-name">Unclaimed</span>
+                    <div className="leaderboard-hover-container" key={metric.key}>
+                        <div className="leaderboard-entry">
+                            {metric.label}: <span className="player-name">Unclaimed</span>
+                        </div>
+                        <div className="leaderboard-hover-card">{metric.description}</div>
                     </div>
                 );
             }
@@ -85,12 +89,15 @@ const LeaderboardPage: React.FC = () => {
             const winners = times.filter(t => t.seconds === minSeconds);
 
             return (
-                <div className="leaderboard-entry" key={metric.key}>
-                    {metric.label}:{' '}
-                    <span className="player-name">
-                        {winners.length === 1 ? winners[0].player.name : 'Contested'}
-                    </span>
-                    {winners.length === 1 && ` (${winners[0].display})`}
+                <div className="leaderboard-hover-container" key={metric.key}>
+                    <div className="leaderboard-entry">
+                        {metric.label}:{' '}
+                        <span className="player-name">
+                            {winners.length === 1 ? winners[0].player.name : 'Contested'}
+                        </span>
+                        {winners.length === 1 && ` (${winners[0].display})`}
+                    </div>
+                    <div className="leaderboard-hover-card">{metric.description}</div>
                 </div>
             );
         }
@@ -101,8 +108,11 @@ const LeaderboardPage: React.FC = () => {
 
         if (maxValue === 0) {
             return (
-                <div className="leaderboard-entry" key={metric.key}>
-                    {metric.label}: <span className="player-name">Unclaimed</span>
+                <div className="leaderboard-hover-container" key={metric.key}>
+                    <div className="leaderboard-entry">
+                        {metric.label}: <span className="player-name">Unclaimed</span>
+                    </div>
+                    <div className="leaderboard-hover-card">{metric.description}</div>
                 </div>
             );
         }
@@ -110,12 +120,15 @@ const LeaderboardPage: React.FC = () => {
         const topPlayers = players.filter(p => p[key] === maxValue);
 
         return (
-            <div className="leaderboard-entry" key={metric.key}>
-                {metric.label}:{' '}
-                <span className="player-name">
-                    {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
-                </span>{' '}
-                ({maxValue} {metric.unit})
+            <div className="leaderboard-hover-container" key={metric.key}>
+                <div className="leaderboard-entry">
+                    {metric.label}:{' '}
+                    <span className="player-name">
+                        {topPlayers.length === 1 ? topPlayers[0].name : 'Contested'}
+                    </span>{' '}
+                    ({maxValue} {metric.unit})
+                </div>
+                <div className="leaderboard-hover-card">{metric.description}</div>
             </div>
         );
     };

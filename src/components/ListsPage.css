@@ -27,6 +27,32 @@
     color: #7ecfff;
 }
 
+/* Hover container for the per-metric description tooltip */
+.leaderboard-hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.leaderboard-hover-card {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.3rem;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.leaderboard-hover-container:hover .leaderboard-hover-card {
+    display: block;
+}
+
 /* Responsive grid fills the screen, tiles are much wider */
 /* Responsive grid fills the screen, tiles are much wider, and tiles are separated visually */
 /* Responsive grid fills the screen, tiles are spaced and never overlap */
