@@ -1,5 +1,6 @@
 import React from 'react';
 import PlayerCell from './PlayerCell';
+import { computeMatchResults } from '../utils/standings';
 import type { Group, Player, Standing } from '../types';
 
 const CELLS_PER_GROUP = 4;
@@ -30,6 +31,9 @@ const GroupBox: React.FC<GroupBoxProps> = ({
                     key={standing?.name ?? `empty-${idx}`}
                     standing={standing}
                     player={standing ? playersByName[standing.name] : undefined}
+                    matchResults={
+                        standing ? computeMatchResults(group, standing.name) : undefined
+                    }
                 />
             ))}
         </section>

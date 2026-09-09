@@ -84,3 +84,34 @@ export function computeStandings(group: Group): Standing[] {
             a.name.localeCompare(b.name)
     );
 }
+
+export type SeriesResult = 'win' | 'loss' | 'tie' | 'unplayed';
+
+export interface OpponentResult {
+    opponent: string;
+    result: SeriesResult;
+}
+
+/** A player's series result against each other group member, in round order. */
+export function computeMatchResults(
+    group: Group,
+    playerName: string
+): OpponentResult[] {
+    return group.matches
+        .filter(match => match.p1 === playerName || match.p2 === playerName)
+        .sort((a, b) => a.round - b.round)
+        .map(match => {
+            const isP1 = match.p1 === playerName;
+            const opponent = isP1 ? match.p2 : match.p1;
+
+            if (!isPlayed(match)) {
+                return { opponent, result: 'unplayed' };
+            }
+
+            const own = isP1 ? match.p1Games : match.p2Games;
+            const other = isP1 ? match.p2Games : match.p1Games;
+            const result: SeriesResult =
+                own === other ? 'tie' : own > other ? 'win' : 'loss';
+            return { opponent, result };
+        });
+}

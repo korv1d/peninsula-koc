@@ -95,10 +95,52 @@
     margin-top: 0.6rem;
 }
 
+.player-cell-record-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .player-cell-record {
     font-variant-numeric: tabular-nums;
     font-size: 1.05rem;
     letter-spacing: 0.05em;
+}
+
+.player-cell-matches {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.match-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #565a70;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    line-height: 1;
+}
+
+.match-box-win {
+    color: #57d977;
+    border-color: #57d977;
+}
+
+.match-box-loss {
+    color: #ff5a5a;
+    border-color: #ff5a5a;
+}
+
+.match-box-tie {
+    color: #e0c85a;
+    border-color: #e0c85a;
+}
+
+.match-box-unplayed {
+    background: transparent;
 }
 
 .player-cell-score {
