@@ -132,7 +132,7 @@
                     "round": 1,
                     "p1": "Ian",
                     "p2": "Nate",
-                    "p1Games": 0,
+                    "p1Games": 2,
                     "p2Games": 0
                 },
                 {
@@ -161,7 +161,7 @@
                     "p1": "Francisco",
                     "p2": "Ian",
                     "p1Games": 0,
-                    "p2Games": 0
+                    "p2Games": 2
                 }
             ]
         }
