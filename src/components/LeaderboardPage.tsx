@@ -24,7 +24,7 @@ type Metric = {
 
 const metrics: Metric[] = [
     { key: 'mostEnemiesKilled', label: 'On a Pale Horse', unit: 'models destroyed', description: 'Most enemy models destroyed in one battle' },
-    { key: 'invincible', label: 'Invincible', unit: 'saves made', description: 'Most saves a model passed and still lived' },
+    { key: 'invincible', label: 'Invincible', unit: 'saves made', description: 'Most saves a model passed and still lived, in one enemy activation' },
     { key: 'bringItDown', label: 'Bring It Down!', unit: 'Colossi', description: 'Most enemy T9 models destroyed across all games' },
     { key: 'greatestPointsDifference', label: 'Greatest Points Difference', unit: 'points', description: 'What it says on the tin' },
     { key: 'highestScore', label: 'Highest Score', unit: 'points', description: 'Highest Score in one battle' },
