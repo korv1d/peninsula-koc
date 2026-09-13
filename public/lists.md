@@ -1,6 +1,6 @@
 James:
 ```
-Chaos - World Eaters - Gladiators WE - [500 pts]
+Chaos - World Eaters - Berserker Warband - [500 pts]
 
 Master of Executions [60 pts]
 

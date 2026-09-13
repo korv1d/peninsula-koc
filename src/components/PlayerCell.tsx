@@ -56,7 +56,10 @@ const PlayerCell: React.FC<PlayerCellProps> = ({
                         </span>
                     )}
                 </div>
-                <span className="player-cell-score">
+                <span
+                    className="player-cell-score"
+                    title={'1 point for each win\n3 points for winning a best-2-of-3'}
+                >
                     {score} <span className="player-cell-score-label">pts</span>
                 </span>
             </div>
