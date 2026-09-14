@@ -55,25 +55,10 @@ SCRAMBLED COMMUNICATIONS
 6. The Colosseum Walls are considered to be 2.01” thick for the purposes of determining Engagement Range. Units on opposite sides of the wall are not considered to be engagement range of one another.
 
 
-Rules from last session which could use an FAQ:
+### Scoring
 
+1. Players play primary mission as determined by their force dispositions
 
-1. All L-shaped terrain pieces and all straight terrain pieces are ruins. These ruins’ footprint is defined by the physical space in which they are in contact with the ground. All [Core Rules](https://wahapedia.ru/wh40k10ed/the-rules/core-rules/#Terrain-Features-1) regarding ruins apply to this terrain, as does the Games Workshop rules commentary.
+### Secondaries FAQ
 
-2. The Colosseum Walls are a special type of terrain. Models may claim cover from this terrain as if it were a ruin as defined in the [Core Rules](https://wahapedia.ru/wh40k10ed/the-rules/core-rules/#Benefit-of-Cover) and associated rules commentary.
-
-3. Colosseum Walls are impassable except for INFANTRY, BEAST, and SWARM models. These models may pass through this terrain by first paying a 4" tax to their movement (2" if the model has the FLY keyword). To do so, the model must be in base-to-base contact with the Colosseum Wall, after paying this tax, the model is then moved to the point on the opposite side of the wall nearest its current position (the model ends the move in base-to-base contact). This traversal is simply a movement penalty and does not constitute its own type of move. If a model does not have enough movement remaining to perform this tranversal by paying the tax it may not traverse. Models must pay this movement tax each time they traverse the Colosseum Wall, even if they do so multiple times in a single movement.
-
-4. The Colosseum Walls may only be traversed in this fashion during a Normal, Advance, Fall-Back, or Charge move.
-
-5. Models must retain their orientation during their traversal of Colosseum Walls.
-
-6. A model may not traverse the Colosseum Wall if doing so would cause its base to overlap with that of another model.
-
-7. Units disembarking from transports may not be set up on the opposite side of Colosseum Walls as the transport they are disembarking from.
-
-8. The Colosseum Walls are considered to be 1.01" thick, meaning that two opposing models on opposite sides of the wall cannot be considered to be within engagement range of one another
-
-9. All ruins are considered infinitely tall for the purposes of visibility.
-
-10. For the purposes of the Sabotage secondary mission, Colosseum Walls are considered to be wholly within the deployment zone of the player whose side they are on. Being in base-to-base contact with a Colosseum Wall makes a unit eligible to perform the Sabotage action.
+- The "Plunder" secondary can be scored by completing the action on your opponent's natural expansion even though it is in your territory.
