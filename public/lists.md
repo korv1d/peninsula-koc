@@ -145,50 +145,43 @@ Assault Intercessor Squad (x5)    - 80 pts
 
 Nate:
 ```
-koc battle shockers (500 points)
+KoC Invasion-Fexes (500 points)
 
 Tyranids
-Synaptic Nexus and Warrior Bioform Onslaught (3 Detachment Points)
+Invasion Fleet (3 Detachment Points)
 Take and Hold
+Strike Force (2000 points)
 
 
 CHARACTERS
 
-Neurotyrant (145 points)
+Neurotyrant (130 points)
   • Warlord
   • 1x Neurotyrant claws and lashes
     1x Psychic scream
-  • Enhancement: The Dirgeheart of Kharis (Aura)
-
-
-BATTLELINE
-
-Tyranid Warriors with Ranged Bio-weapons (60 points)
-  • 1x Tyranid Prime
-    • 1x Deathspitter
-      1x Tyranid Warrior claws and talons
-  • 2x Tyranid Warrior
-    • 1x Barbed strangler
-      2x Tyranid Warrior claws and talons
-      1x Venom cannon
 
 
 OTHER DATASHEETS
 
-Neurolictor (80 points)
-  • 1x Piercing claws and talons
+Carnifexes (180 points)
+  • 2x Carnifex
+    • 2x Bio-plasma
+      2x Carnifex scything talons
+      2x Chitinous claws and teeth
+      2x Devourers with brainleech worms
+      2x Spine banks
 
-Screamer-Killer (125 points)
-  • 1x Bio-plasmic scream
-    1x Screamer-Killer talons
+Tyrant Guard (80 points)
+  • 3x Tyrant Guard
+    • 3x Scything talons and rending claws
 
-Zoanthropes (90 points)
-  • 1x Neurothrope
-    • 1x Chitinous claws and teeth
-      1x Warp Blast
-  • 2x Zoanthrope
-    • 2x Chitinous claws and teeth
-      2x Warp Blast
+Venomthropes (55 points)
+  • 3x Venomthrope
+    • 3x Toxic lashes
+
+Von Ryan’s Leapers (55 points)
+  • 3x Von Ryan’s Leaper
+    • 3x Leaper’s talons
 ```
 
 
