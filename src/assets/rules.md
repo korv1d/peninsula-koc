@@ -61,6 +61,6 @@ SCRAMBLED COMMUNICATIONS
 
 ### FAQs
 
-- Obectives (circles) do not provide cover to INFANTRY, MOUNTED, or SWARM units, despite being classified above as terrain areas which have dense terrain features on them.
+- Obectives (circles) do not provide cover to INFANTRY, BEAST, or SWARM units, despite being classified above as terrain areas which have dense terrain features on them.
 
 - The "Plunder" secondary can be scored by completing the action on your opponent's natural expansion even though it is in your territory.
