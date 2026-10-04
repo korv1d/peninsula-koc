@@ -115,7 +115,7 @@
             "name": "Group C",
             "color": "green",
             "players": [
-                "Hugo",
+                "Rhys",
                 "Francisco",
                 "Ian",
                 "Nate"
@@ -123,7 +123,7 @@
             "matches": [
                 {
                     "round": 1,
-                    "p1": "Hugo",
+                    "p1": "Rhys",
                     "p2": "Francisco",
                     "p1Games": 0,
                     "p2Games": 0
@@ -137,10 +137,10 @@
                 },
                 {
                     "round": 2,
-                    "p1": "Hugo",
+                    "p1": "Rhys",
                     "p2": "Ian",
                     "p1Games": 0,
-                    "p2Games": 0
+                    "p2Games": 2
                 },
                 {
                     "round": 2,
@@ -151,7 +151,7 @@
                 },
                 {
                     "round": 3,
-                    "p1": "Hugo",
+                    "p1": "Rhys",
                     "p2": "Nate",
                     "p1Games": 0,
                     "p2Games": 0

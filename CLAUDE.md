@@ -95,6 +95,10 @@ Commits are almost all data edits, one event per commit (see `git log`: "Legend 
   player) in `src/tournament/tournament.json`.
 - **Stat record** → edit the field in `public/players/<Name>.json`.
 - **New/changed army list** → edit `list` in `public/players/<Name>.json` (embedded `\n`, rendered in a `<pre>`).
+  Whenever the user gives an army list and names the player, always do both steps:
+  1. Replace that player's entry in [public/lists.md](public/lists.md) with the new list.
+  2. Put the same text into `list` in `public/players/<Name>.json`, with `\n` line breaks.
+     Update the short `army` label too if the faction or detachment changed.
 - **Rule change** → edit `src/assets/rules.md` (markdown; commented-out lines are open questions/retired rules).
 - **New player** → add to `PLAYER_NAMES` *and* create `public/players/<Name>.json` *and* place them in the bracket.
 

@@ -280,68 +280,60 @@ Created with newrecruit.eu v35.72
 
 Rhys:
 ```
-KotC 2 (495 Points)
+KotC (500 Points)
 
-Space Marines
-Gladius Task Force (3 Detachment Points)
-Priority Assets
-Incursion (1,000 Points)
+Orks
+Bully Boyz, Dread Mob, and Green Tide (3 Detachment Points)
+Purge the Foe
 
-CHARACTERS
+ATTACHED UNITS
 
-Captain (80 Points)
+Attached unit 1
+
+Big Mek in Mega Armour (90 Points)
+  • Attached as: Leader (Character)
   • Warlord
-  • 1x Bolt Pistol
-  • 1x Close combat weapon
-  • 1x Master-crafted bolter
+  • 1x Kustom Mega-blasta
+  • 1x Power Klaw
+  • 1x Tellyport Blasta
+
+Meganobz (110 Points)
+  • Attached as: Bodyguard
+  • 3x Meganob
+     ◦ 1x Killsaw
+     ◦ 3x Kombi-weapon
+     ◦ 2x Power Klaw
 
 BATTLELINE
 
-Assault Intercessor Squad (75 Points)
-  • 1x Assault Intercessor Sergeant
-     ◦ 1x Astartes chainsword
-     ◦ 1x Heavy bolt pistol
-  • 4x Assault Intercessor
-     ◦ 4x Astartes chainsword
-     ◦ 4x Heavy bolt pistol
+Boyz (85 Points)
+  • 9x Boy
+     ◦ 1x Burna
+     ◦ 9x Choppa
+     ◦ 1x Rokkit Launcha
+     ◦ 7x Shoota
+     ◦ 9x Slugga
+  • 1x Nob
+     ◦ 1x Kombi-rokkit
+     ◦ 1x Power Klaw
 
-Intercessor Squad (80 Points)
-  • 1x Intercessor Sergeant
-     ◦ 1x Bolt pistol
-     ◦ 1x Bolt rifle
-     ◦ 1x Close combat weapon
-  • 4x Intercessor
-     ◦ 4x Bolt pistol
-     ◦ 4x Bolt rifle
-     ◦ 4x Close combat weapon
-
-DEDICATED TRANSPORTS
-
-Impulsor (70 Points)
-  • 1x Armoured hull
-  • 2x Storm bolter
+Boyz (85 Points)
+  • 9x Boy
+     ◦ 1x Burna
+     ◦ 9x Choppa
+     ◦ 1x Rokkit Launcha
+     ◦ 7x Shoota
+     ◦ 9x Slugga
+  • 1x Nob
+     ◦ 1x Kombi-rokkit
+     ◦ 1x Power Klaw
 
 OTHER DATASHEETS
 
-Bladeguard Veteran Squad (80 Points)
-  • 1x Bladeguard Veteran Sergeant
-     ◦ 1x Heavy bolt pistol
-     ◦ 1x Master-crafted power weapon
-  • 2x Bladeguard Veteran
-     ◦ 2x Heavy bolt pistol
-     ◦ 2x Master-crafted power weapon
-
-Hellblaster Squad (110 Points)
-  • 1x Hellblaster Sergeant
-     ◦ 1x Bolt pistol
-     ◦ 1x Close combat weapon
-     ◦ 1x Plasma incinerator
-  • 4x Hellblaster
-     ◦ 4x Bolt pistol
-     ◦ 4x Close combat weapon
-     ◦ 4x Plasma incinerator
-
-Exported with App Version: v2.4.0 (1), Data Version: v925
+Deff Dread (130 Points)
+  • 1x Dread Klaws
+  • 1x Rokkit Launcha
+  • 1x Rokkit Launcha
 ```
 
 
@@ -439,42 +431,34 @@ Exported with App Version: v2.4.0 (1), Data Version: v925
 EvilIan:
 ```
 +++++++++++++++++++++++++++++++++++++++++++++++
-+ FACTION KEYWORD: Adeptus Mechanicus
-+ DETACHMENT: Haloscreed Battleclade (Noospheric Transference)
-+ FORCE DISPOSITION: Purge the Foe
-+ TOTAL ARMY POINTS: 460pts
++ FACTION: Adeptus Mechanicus
++ DETACHMENT: Cohort Cybernetica, Lords of the Forge (Cyber Psalm-Programming)
++ FORCE DISPOSITION: Take and Hold
++ TOTAL ARMY POINTS: 500pts
++
++ WARLORD: Tech-Priest Manipulus
++ ENHANCEMENT: Necromechanic (on Cybernetica Datasmith)
++ NUMBER OF UNITS: 6
 +++++++++++++++++++++++++++++++++++++++++++++++
 
+1x Cybernetica Datasmith (40 pts): Mechanicus pistol, Power fist
+Enhancement: Necromechanic (+20 pts)
+Supporting Kastelan Robots
 1x Tech-Priest Manipulus (60 pts): Warlord, Omnissian staff, Magnarail lance
+Leading Skitarii Vanguard
 
-10x Skitarii Rangers (85 pts)
-• 9x Skitarii Ranger
-    1 with Arc rifle, Close combat weapon
-    1 with Enhanced data-tether, Close combat weapon, Galvanic rifle
-    5 with Close combat weapon, Galvanic rifle
-    1 with Close combat weapon, Plasma caliver
-    1 with Close combat weapon, Transuranic arquebus
-• 1x Skitarii Ranger Alpha: Alpha combat weapon, Close combat weapon, Mechanicus pistol
-10x Skitarii Vanguard (90 pts)
+10x Skitarii Vanguard (85 pts)
 • 9x Skitarii Vanguard
     1 with Arc rifle, Close combat weapon
-    1 with Omnispex, Close combat weapon, Radium carbine
     1 with Close combat weapon, Plasma caliver
-    6 with Close combat weapon, Radium carbine
-• 1x Skitarii Vanguard Alpha: Alpha combat weapon, Close combat weapon, Mechanicus pistol
-10x Skitarii Vanguard (90 pts)
-• 9x Skitarii Vanguard
-    1 with Arc rifle, Close combat weapon
     1 with Omnispex, Close combat weapon, Radium carbine
-    1 with Close combat weapon, Plasma caliver
     6 with Close combat weapon, Radium carbine
-• 1x Skitarii Vanguard Alpha: Alpha combat weapon, Close combat weapon, Mechanicus pistol
+• 1x Skitarii Vanguard Alpha: Alpha combat weapon, Close combat weapon, Radium carbine
+  Attached to Tech-Priest Manipulus
 
-3x Serberys Raiders (60 pts)
-• 2x Serberys Raider
-    1 with Cavalry sabre & clawed limbs, Galvanic carbine
-    1 with Enhanced data-tether, Cavalry sabre & clawed limbs, Galvanic carbine
-• 1x Serberys Raider Alpha: Cavalry sabre & clawed limbs, Galvanic carbine, Mechanicus pistol
+1x Ironstrider Ballistarii (90 pts): Ironstrider feet, Twin cognis lascannon
+2x Kastelan Robots (150 pts): 2 with Twin Kastelan fist, Incendine combustor
+  Attached to Cybernetica Datasmith
 5x Sicarian Infiltrators (75 pts)
 • 1x Sicarian Infiltrator Princeps (Power weapon & stub carbine): Power weapon, Stubcarbine
 • 4x Sicarian Infiltrator (Power weapon & stubcarbine): 4 with Power weapon, Stubcarbine
