@@ -1,0 +1,20 @@
+I want to create a new tab on the website which will allow players to track their Secondary missions as they play a game of Warhammer 40,000 11th edition. The name of the tab will be "2nds"
+
+This page will be different frmo the website for two main reasons:
+1. It must be designed with mobile users as a priority- everything that gets displayed is expected to be viewed from a phone
+2. This page must serve dynamic content. Secondary missions are nothing more than a deck of cards. Each player draws 2 secondary missions on each of their turns. This means that if there are 20 people using the website at the same time, this page must display secondary content specific to that player. This includes keeping track of each player's deck, hand, and discard pile.
+
+Requirements:
+* The new page must all fit on a single mobile screen. It should not be possible to scroll.
+* Each secondary mission will have a image associated with it stored in public/secondaries/ This image will have a filename which matches the name of the secondary mission and the image itself will be a screenshot of those mission rules.
+* A UI should be available to the player. The UI must have 5 sections:
+    1. Player hand- A list of interactable rectangles. Each element of the list represents one secondary mission card in the player's hand. Clicking on that element displays the image associated with that Secondary. When viewing a secondary mission image, the image should take up the whole screen and a transparent "X" circle button should be in the top righthand side of the screen to close the image and continue viewing the Secondaries tab
+    2. A draw card button. Clicking this button adds the top card of the secondary deck to the player's hand.
+    3. A Score button- clicking this button makes all cards in a player's hand start to wiggle like the iphone "delete app" feature. While wiggling, the Score button itself will change color to a light hue and the text will change from "Score" to "Confirm". While the cards arre wiggling in this mode, the user can click any card in their hand to have that card become highlighted. Highlighted cards stop wiggling and when the user clicks Confirm, all highlighted cards are removed from the player hand and moved to the discard pile. Clicking confirm causes the cards to stop wiggling and for the Confirm button to revert back to Score.
+    4. A Redraw button- This button functions the same way as the "Score" button, except that selected cards are shuffled back into the deck instead of being discarded.
+    5. Discard button- sometimes players may choose to discard a card for a command point. This button works exactly like "Score", but has a different name so as to not confuse the players (this is ok because the app does not track points)
+    6. Discard pile- a small red trash can icon should exist in the bottom righthand corner of the screen, clicking it displays a pop-up menu of all secondary cards in the discard pile.
+    * The idea shape of this tab would be one large rectangle displaying the user's hand. Below this would be the 4 buttons in a 2x2 formation. The trash/discard pile icon would be small and in the bottom right
+* This secondary page should be loaded when the user loads the website. To laod this page, the secondary mission deck should be shuffled, the player hand should be empty and the discard pile should be empty.
+* Switching to a different tab while on the website should not change the state of the secondary mission deck, player hand, or discardd pile. Only a page refresh should cause this data to be reset
+* Data for this secondary mission page is dynamic while the rest of the website is static. Any data used by the secondary mission deck such as the location of a card (deck, hand, discard) should be stored on the user's device rather than the website server.
