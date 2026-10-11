@@ -146,23 +146,31 @@ html.sec-no-scroll body {
     font-size: 0.9rem;
 }
 
-.sec-trash {
+.sec-piles {
+    display: flex;
+    gap: 16px;
+}
+
+.sec-pile-btn {
     position: relative;
     padding: 6px;
     background: transparent;
     border: none;
-    color: #e04848;
     line-height: 0;
 }
 
-.sec-trash-count {
+.sec-pile-completed { color: #3ec46d; }
+.sec-pile-discard { color: #e04848; }
+.sec-pile-completed .sec-pile-count { background: #2e9e55; }
+.sec-pile-discard .sec-pile-count { background: #e04848; }
+
+.sec-pile-count {
     position: absolute;
-    top: -2px;
-    right: -4px;
+    top: -8px;
+    right: -10px;
     min-width: 18px;
     padding: 0 4px;
     border-radius: 9px;
-    background: #e04848;
     color: #fff;
     font-size: 0.7rem;
     font-weight: 700;

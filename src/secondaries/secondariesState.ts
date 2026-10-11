@@ -5,11 +5,13 @@ export interface SecondariesState {
     deck: string[];
     hand: string[];
     discard: string[];
+    completed: string[];
 }
 
 export type SecondariesAction =
     | { type: 'draw' }
     | { type: 'discard'; cards: string[] }
+    | { type: 'complete'; cards: string[] }
     | { type: 'redraw'; cards: string[] };
 
 /** Returns a Fisher-Yates shuffled copy of `cards`. */
@@ -22,12 +24,12 @@ export function shuffle<T>(cards: readonly T[]): T[] {
     return result;
 }
 
-/** Fresh game: full shuffled deck, empty hand and discard pile. */
+/** Fresh game: full shuffled deck, empty hand, discard, and completed piles. */
 export function initialSecondariesState(): SecondariesState {
-    return { deck: shuffle(SECONDARY_NAMES), hand: [], discard: [] };
+    return { deck: shuffle(SECONDARY_NAMES), hand: [], discard: [], completed: [] };
 }
 
-/** Moves cards between deck, hand, and discard pile. */
+/** Moves cards between deck, hand, discard, and completed piles. */
 export function secondariesReducer(state: SecondariesState, action: SecondariesAction): SecondariesState {
     switch (action.type) {
         case 'draw': {
@@ -40,6 +42,12 @@ export function secondariesReducer(state: SecondariesState, action: SecondariesA
                 ...state,
                 hand: state.hand.filter(card => !action.cards.includes(card)),
                 discard: [...state.discard, ...action.cards],
+            };
+        case 'complete':
+            return {
+                ...state,
+                hand: state.hand.filter(card => !action.cards.includes(card)),
+                completed: [...state.completed, ...action.cards],
             };
         case 'redraw':
             return {

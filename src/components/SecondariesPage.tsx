@@ -4,11 +4,29 @@ import { secondaryImageUrl, useSecondaries } from '../secondaries/secondariesSta
 import './SecondariesPage.css';
 
 type SelectMode = 'score' | 'redraw' | 'discard';
+type PileKey = 'completed' | 'discard';
 
 const MODE_LABELS: Record<SelectMode, string> = {
     score: 'Score',
     redraw: 'Redraw',
     discard: 'Discard',
+};
+
+const MODE_ACTIONS: Record<SelectMode, 'complete' | 'redraw' | 'discard'> = {
+    score: 'complete',
+    redraw: 'redraw',
+    discard: 'discard',
+};
+
+const PILES: Record<PileKey, { title: string; iconPath: string }> = {
+    completed: {
+        title: 'Completed',
+        iconPath: 'M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z',
+    },
+    discard: {
+        title: 'Discard pile',
+        iconPath: 'M9 3h6l1 2h4v2H4V5h4l1-2zm-3 6h12l-1 12H7L6 9zm4 2v8h1.5v-8H10zm3.5 0v8H15v-8h-1.5z',
+    },
 };
 
 /** Full-screen view of a secondary's rules image. */
@@ -19,13 +37,13 @@ const CardViewer: React.FC<{ name: string; onClose: () => void }> = ({ name, onC
     </div>
 );
 
-/** Mobile-first secondary mission tracker: hand, draw/score/redraw/discard controls, and discard pile. */
+/** Mobile-first secondary mission tracker: hand, draw/score/redraw/discard controls, and completed/discard piles. */
 const SecondariesPage: React.FC = () => {
     const { state, dispatch } = useSecondaries();
     const [mode, setMode] = useState<SelectMode | null>(null);
     const [selected, setSelected] = useState<string[]>([]);
     const [viewing, setViewing] = useState<string | null>(null);
-    const [pileOpen, setPileOpen] = useState(false);
+    const [openPile, setOpenPile] = useState<PileKey | null>(null);
 
     // Locks the document so the page can't scroll while this tab is open.
     useEffect(() => {
@@ -40,7 +58,7 @@ const SecondariesPage: React.FC = () => {
             return;
         }
         if (selected.length > 0) {
-            dispatch({ type: target === 'redraw' ? 'redraw' : 'discard', cards: selected });
+            dispatch({ type: MODE_ACTIONS[target], cards: selected });
         }
         setMode(null);
         setSelected([]);
@@ -61,6 +79,15 @@ const SecondariesPage: React.FC = () => {
             onClick={() => handleModeButton(target)}
         >
             {mode === target ? 'Confirm' : MODE_LABELS[target]}
+        </button>
+    );
+
+    const pileButton = (pile: PileKey) => (
+        <button className={`sec-pile-btn sec-pile-${pile}`} onClick={() => setOpenPile(pile)} aria-label={PILES[pile].title}>
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                <path fill="currentColor" d={PILES[pile].iconPath} />
+            </svg>
+            {state[pile].length > 0 && <span className="sec-pile-count">{state[pile].length}</span>}
         </button>
     );
 
@@ -102,28 +129,23 @@ const SecondariesPage: React.FC = () => {
 
                 <div className="sec-footer">
                     <span className="sec-deck-count">Deck: {state.deck.length}</span>
-                    <button className="sec-trash" onClick={() => setPileOpen(true)} aria-label="Discard pile">
-                        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
-                            <path
-                                fill="currentColor"
-                                d="M9 3h6l1 2h4v2H4V5h4l1-2zm-3 6h12l-1 12H7L6 9zm4 2v8h1.5v-8H10zm3.5 0v8H15v-8h-1.5z"
-                            />
-                        </svg>
-                        {state.discard.length > 0 && <span className="sec-trash-count">{state.discard.length}</span>}
-                    </button>
+                    <div className="sec-piles">
+                        {pileButton('completed')}
+                        {pileButton('discard')}
+                    </div>
                 </div>
             </div>
 
-            {pileOpen && (
-                <div className="sec-modal-backdrop" onClick={() => setPileOpen(false)}>
+            {openPile && (
+                <div className="sec-modal-backdrop" onClick={() => setOpenPile(null)}>
                     <div className="sec-modal" onClick={e => e.stopPropagation()}>
                         <div className="sec-modal-header">
-                            <span>Discard pile</span>
-                            <button className="sec-modal-close" onClick={() => setPileOpen(false)} aria-label="Close">✕</button>
+                            <span>{PILES[openPile].title}</span>
+                            <button className="sec-modal-close" onClick={() => setOpenPile(null)} aria-label="Close">✕</button>
                         </div>
                         <div className="sec-modal-list">
-                            {state.discard.length === 0 && <div className="sec-empty">Discard pile is empty</div>}
-                            {state.discard.map(card => (
+                            {state[openPile].length === 0 && <div className="sec-empty">No cards here yet</div>}
+                            {state[openPile].map(card => (
                                 <button key={card} className="sec-card" onClick={() => setViewing(card)}>
                                     {card}
                                 </button>
