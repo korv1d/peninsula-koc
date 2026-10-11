@@ -19,6 +19,9 @@ const NavBar: React.FC = () => {
                 <li className={location.pathname === '/lists' ? 'active' : ''}>
                     <Link to="/lists">Lists</Link>
                 </li>
+                <li className={location.pathname === '/2nds' ? 'active' : ''}>
+                    <Link to="/2nds">2nds</Link>
+                </li>
             </ul>
         </nav>
     );

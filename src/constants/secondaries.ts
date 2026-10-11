@@ -1,0 +1,21 @@
+// Each name must match a public/secondaries/<Name>.png file.
+export const SECONDARY_NAMES = [
+    'A GRIEVOUS BLOW',
+    'A TEMPTING TARGET',
+    'ASSASSINATION',
+    'BEACON',
+    'BEHIND ENEMY LINES',
+    'BRING IT DOWN',
+    'BURDEN OF TRUST',
+    'CENTRE GROUND',
+    'CLEANSE',
+    'DEFEND STRONGHOLD',
+    'DISPLAY OF MIGHT',
+    'ENAGE ON ALL FRONTS',
+    'FORWARD POSITION',
+    'NO PRISONERS',
+    'OUTFLANK',
+    'OVERWHELMING FORCE',
+    'PLUNDER',
+    'SECURE NO MANS LAND',
+] as const;

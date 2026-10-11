@@ -37,3 +37,17 @@
     border-radius: 4px;
     transition: background 0.2s;
 }
+@media (max-width: 600px) {
+    .nav-bar ul {
+        gap: 0.25rem;
+        padding: 0.5rem 0;
+    }
+
+    .nav-bar li {
+        font-size: 0.95rem;
+    }
+
+    .nav-bar a {
+        padding: 0.25rem 0.4rem;
+    }
+}
