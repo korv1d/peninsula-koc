@@ -467,51 +467,31 @@ Leading Skitarii Vanguard
 
 Gabe:
 ```
-Blood Angels: The Blood Host
-Detachments:
-The Angelic Host 2pts
-Vengeful Hosts 1pts
-Force Disposition: Take and Hold
-Captain with Jump Pack (warlord) (80)
-Plasma Pistol 
-Power Fist
-Orksbane (Enhancement) (20)
-Leading Sanguinary Guard
-Sanguinary Guard (125)
-2x Encarmine Spear, Angelus Boltgun
-1x Encarmine Spear, Inferno Pistol
+Ancient (Leader) (Furious Assault)
+    Bolt Pistol, Ceramite Fists, Power Weapon
+Assault Intercessor
+1x Assault Intercessor Sergent 
+    Plasma Pistol, Powerfist
+4x Assault Intercessor
+    Chainsword, Heavy Bolt Pistol
 
-Death Company Captain With Jump Pack (75)
-Power Pack
-Plasma Pistol
-Leading Death Company Marines with Jump Packs
-Death Company Marines with Jump Packs (120)
-2x Death Company Marines with Jump Pack
-Heavy bolt Pistol
-Astartes chainsword
-1x Death Company Marines with Jump Pack
-Power fist
-Plasma pistol
-1x Death Company Marines with Jump Pack
-Power fist
-Heavy bolt pistol
-1x Death Company Marines with Jump Pack
-Eviscerator
-Plasma pistol
-Intercessor Squad
-Intercessor Sergeant (80)
-Bolt rifle
-Power fist
-Bolt pistol
-Close combat weapon
-3x Intercessors
-Blot rifles
-Blot pistols
-Close combat weapon
-Intercessor 
-Bolt rifle w/ Grenade Launcher
-Bolt pistol
-Close combat weapon
+Captain With Jump Pack (Leader) (Angelic Executioner)
+    Plasma Pistol, Power Fist
+Sanguinary Guard
+
+1x Sanguinary Guard
+    Encarmine Weapon, Inferno Pistol
+2x Sanguinary Guard
+    Encarmine Weapon, Angelus Boltgun
+
+Eradicator Squad (Immovable Conquerors)
+1x Eradicator Sergent
+    Bolt Pistol, Ceramite Fists, Melta Rifle
+1x Eradicator
+    Bolt Pistol, Ceramite Fists, Melta Rifle
+1x Eradicator
+    Bolt Pistol, Ceramite Fists, Multi Melta
+Assault Brethren, Encarmine Speartip, Gravis Siege Force
 ```
 
 
